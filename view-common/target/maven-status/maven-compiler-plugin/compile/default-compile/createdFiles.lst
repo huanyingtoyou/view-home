@@ -1,0 +1,4 @@
+com\lihy\view\common\constant\SystemConstant.class
+com\lihy\view\common\util\ResponseResult.class
+com\lihy\view\common\util\BaseResponseMsg.class
+com\lihy\view\common\entity\User.class

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: view-view
+server:
+  port: 8088
+#eureka:
+  #client:
+    #serviceUrl:
+      #defaultZone: http://localhost:8081/eureka/
+  #instance:
+      #status-page-url: http://localhost:${server.port}/swagger-ui.html
+      #status-page-url: http://localhost:${server.port}/swagger/index.html
+      #prefer-ip-address: true

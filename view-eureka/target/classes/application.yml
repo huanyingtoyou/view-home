@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: view-eureka
+server:
+  port: 8088
+eureka:
+  instance:
+    hostname: localhost
+  #关闭自我保护
+  server:
+    enableSelfPreservation: false
+    eviction-interval-timer-in-ms: 5000
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    #注册中心地址
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

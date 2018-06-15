@@ -1,0 +1,23 @@
+package com.lihy.view.api.feign;
+
+import com.lihy.view.common.constant.SystemConstant;
+import com.lihy.view.common.entity.User;
+import com.lihy.view.common.util.ResponseResult;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ * @author lihy
+ * @date 2018/04/17
+ */
+public class UserApiHystrixFallback implements UserApi {
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserApiHystrixFallback.class);
+    @Override
+    public ResponseResult<User> getUserInfo(String id) {
+        LOGGER.error("---------------根据用户名获取用户信息降级服务start---------------");
+        ResponseResult<User> responseResult = new ResponseResult<>();
+        responseResult.setResponseCode(SystemConstant.SERVICE_IS_UNABLE.getCode());
+        responseResult.setResponseMsg(SystemConstant.SERVICE_IS_UNABLE.getName());
+        return responseResult;
+    }
+}
