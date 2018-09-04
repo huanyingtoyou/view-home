@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author lihy
@@ -56,6 +57,7 @@ public class UserServiceImpl implements UserService {
      * @param user
      * @return
      */
+    @Transactional
     @Override
     public ResponseResult<Void> addUser(User user) {
         LOGGER.info("-----------------新增用户start-----------------");

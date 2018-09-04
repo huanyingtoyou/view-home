@@ -6,7 +6,8 @@ spring:
     # mysql 属性配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/view?characterEncoding=utf8
+    # autoReconnect=true自动重连(mysql5以上无效)，allowMultiQueries=true支持批量更新
+    url: jdbc:mysql://localhost:3306/view?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
     password:
 # mybatis mapper xml 配置
