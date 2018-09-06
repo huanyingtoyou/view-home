@@ -10,7 +10,7 @@ public class User {
     /**
      * 主键id
      */
-    private String id;
+    private String userId;
     /**
      * 用户名
      */
@@ -48,12 +48,17 @@ public class User {
      */
     private String updatePerson;
 
-    public String getId() {
-        return id;
+    /**
+     * 加密盐
+     */
+    private String salt;
+
+    public String getUserId() {
+        return userId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -126,5 +131,13 @@ public class User {
 
     public void setUpdatePerson(String updatePerson) {
         this.updatePerson = updatePerson;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
     }
 }

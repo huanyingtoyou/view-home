@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lihy.view.user.mapper.UserMapper">
-    <select id="getUserInfo" resultType="com.lihy.view.common.entity.User" parameterType="String">
+    <resultMap id="UserResultMap" type="com.lihy.view.common.entity.User">
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+        <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+        <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+        <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+        <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+        <result column="BIRTH_DATE" jdbcType="VARCHAR" property="birthDate" />
+        <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+        <result column="CREATE_PERSON" jdbcType="VARCHAR" property="createPerson" />
+        <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+        <result column="UPDATE_PERSON" jdbcType="VARCHAR" property="updatePerson" />
+    </resultMap>
+    <!-- 根据用户guid获取用户信息 -->
+    <select id="getUserInfoByUserId" resultType="com.lihy.view.common.entity.User" parameterType="String">
         SELECT
           *
         FROM t_user t
-        WHERE t.id = #{id,jdbcType=VARCHAR}
+        WHERE t.USER_ID = #{userId, jdbcType = VARCHAR}
+    </select>
+
+    <!-- 根据用户名获取用户信息 -->
+    <select id="getUserInfoByUsername" resultMap="UserResultMap" parameterType="com.lihy.view.common.entity.User">
+        SELECT
+          *
+        FROM t_user t
+        WHERE
+        1 = 1
+        AND t.USERNAME = #{username, jdbcType = VARCHAR}
     </select>
 
     <!-- 用户注册 -->
-    <insert id="addUser" parameterType="com.lihy.view.common.entity.User">
+    <insert id="doRegister" parameterType="com.lihy.view.common.entity.User">
         INSERT INTO t_user
         <trim prefix="(" suffix=")" suffixOverrides="," >
-            <if test="id != null and id != ''">
-                ID,
+            <if test="guid != null and guid != ''">
+                GUID,
             </if>,
             <if test="username != null and username != ''">
                 USERNAME,
@@ -44,8 +67,8 @@
             </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides="," >
-            <if test="id != null and id != ''">
-                #{id,jdbcType=VARCHAR},
+            <if test="guid != null and guid != ''">
+                #{guid,jdbcType=VARCHAR},
             </if>
             <if test="username != null and username != ''">
                 #{username,jdbcType=VARCHAR},

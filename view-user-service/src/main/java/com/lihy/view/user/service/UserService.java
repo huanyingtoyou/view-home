@@ -9,10 +9,4 @@ import com.lihy.view.common.util.ResponseResult;
  * @date 2018/04/17
  */
 public interface UserService extends UserApi {
-    /**
-     * 用户注册
-     * @param user
-     * @return
-     */
-    ResponseResult<Void> addUser(User user);
 }

@@ -23,13 +23,13 @@ public class UserController {
     private UserService userService;
 
     /**
-     * 根据主键id（用户名）获取用户信息
-     * @param id
+     * 根据用户userId获取用户信息
+     * @param userId
      * @return
      */
-    @GetMapping("/userInfo")
-    public ResponseResult<User> getUserInfo(String id) {
-        ResponseResult<User> responseResult = userService.getUserInfo(id);
+    @PostMapping("/getUserInfoByGuid")
+    public ResponseResult<User> getUserInfoByUserId(@RequestParam String userId) {
+        ResponseResult<User> responseResult = userService.getUserInfoByUserId(userId);
         return responseResult;
     }
 
@@ -39,8 +39,19 @@ public class UserController {
      * @return
      */
     @PostMapping("/register")
-    public ResponseResult<Void> addUser(@RequestBody User user) {
-        ResponseResult<Void> responseResult = userService.addUser(user);
+    public ResponseResult<Void> register(@RequestBody User user) {
+        ResponseResult<Void> responseResult = userService.doRegister(user);
+        return responseResult;
+    }
+
+    /**
+     * 用户登录
+     * @param user
+     * @return
+     */
+    @PostMapping("/login")
+    public ResponseResult<Void> login(@RequestBody User user) {
+        ResponseResult<Void> responseResult = userService.doLogin(user);
         return responseResult;
     }
 }

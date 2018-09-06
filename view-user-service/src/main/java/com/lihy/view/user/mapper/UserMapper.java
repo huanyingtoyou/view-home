@@ -8,16 +8,22 @@ import com.lihy.view.common.entity.User;
  */
 public interface UserMapper {
     /**
-     * 根据主键id获取用户信息
-     * @param id
+     * 根据用户userId获取用户信息
+     * @param userId
      * @return
      */
-    User getUserInfo(String id);
+    User getUserInfoByUserId(String userId);
 
     /**
      * 用户注册
      * @param user
      * @return
      */
-    int addUser(User user);
+    int doRegister(User user);
+
+    /**
+     * 根据用户名获取用户信息
+     * @return
+     */
+    User getUserInfoByUsername(User user);
 }
