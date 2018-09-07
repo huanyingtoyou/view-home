@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4ec950f-bb55-4ac5-97cb-46f6fefd42e7" name="Default" comment="系统编号生成规则">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-photo-service/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-video-service/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-view/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/application/ViewApplication.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/PhotoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/TestController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/UserController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/VideoController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-view/src/main/resources/application.yml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,14 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysBillRuleServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SysBillRuleServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="211">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,9 +109,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
               <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-              <folding>
-                <marker date="1536301791345" expanded="true" signature="855:914" ph="SELECT * FRO... T_SYS_BILL_RULE" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,16 +129,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-              <folding>
-                <marker date="1536300491317" expanded="true" signature="4681:4792" ph="select from t_sys_bill_rule" />
-                <marker date="1536300491317" expanded="true" signature="4878:4943" ph="delete from " />
-                <marker date="1536300491317" expanded="true" signature="5056:5083" ph="delete from " />
-                <marker date="1536300491317" expanded="true" signature="5273:6107" ph="insert into t_sys_bill_rule... " />
-                <marker date="1536300491317" expanded="true" signature="9174:9210" ph="select count... t_sys_bill_rule" />
-                <marker date="1536300491317" expanded="true" signature="11542:12527" ph="update t_sys... " />
-                <marker date="1536300491317" expanded="true" signature="12748:14456" ph="update t_sys... " />
-                <marker date="1536300491317" expanded="true" signature="14565:15434" ph="update t_sys... " />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -200,6 +203,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -242,15 +250,15 @@
         <option value="$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApi.java" />
         <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/GuidUtil.java" />
         <option value="$PROJECT_DIR$/view-eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/view-common/pom.xml" />
         <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/entity/SysBillRule.java" />
         <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/mapper/SysBillRuleMapper.java" />
         <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/user/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java" />
         <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/extend/SysBillRuleMapper.xml" />
         <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/SysBillRuleService.java" />
+        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -391,10 +399,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -402,71 +406,14 @@
               <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
               <item name="view-home" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-eureka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-user-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-video-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-view" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,7 +428,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42068964" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
@@ -655,6 +602,8 @@
       <workItem from="1536286255398" duration="4795000" />
       <workItem from="1536303419181" duration="1063000" />
       <workItem from="1536304491647" duration="142000" />
+      <workItem from="1536309107599" duration="17000" />
+      <workItem from="1536309133903" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="用户注册sql重写">
       <created>1536054689240</created>
@@ -688,7 +637,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86898000" />
+    <option name="totallyTimeSpent" value="87549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -711,21 +660,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48464164" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3771331" sideWeight="0.4969743" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2193646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -966,10 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <marker date="1536225823214" expanded="true" signature="1220:1316" ph="SELECT * FRO... t_user" />
-            <marker date="1536225823214" expanded="true" signature="1480:1605" ph="SELECT * FRO... t_user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="78" column="12" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="78" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,19 +976,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,10 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#2338#2339#0" expanded="false" />
-            <element signature="e#2365#2366#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1089,16 +1020,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-          <folding>
-            <marker date="1536300491317" expanded="true" signature="4681:4792" ph="select from t_sys_bill_rule" />
-            <marker date="1536300491317" expanded="true" signature="4878:4943" ph="delete from " />
-            <marker date="1536300491317" expanded="true" signature="5056:5083" ph="delete from " />
-            <marker date="1536300491317" expanded="true" signature="5273:6107" ph="insert into t_sys_bill_rule... " />
-            <marker date="1536300491317" expanded="true" signature="9174:9210" ph="select count... t_sys_bill_rule" />
-            <marker date="1536300491317" expanded="true" signature="11542:12527" ph="update t_sys... " />
-            <marker date="1536300491317" expanded="true" signature="12748:14456" ph="update t_sys... " />
-            <marker date="1536300491317" expanded="true" signature="14565:15434" ph="update t_sys... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,9 +1060,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <marker date="1536301791345" expanded="true" signature="855:914" ph="SELECT * FRO... T_SYS_BILL_RULE" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1152,14 +1072,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml" />
     <entry file="file://$PROJECT_DIR$/view-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1170,11 +1083,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="211">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
