@@ -6,6 +6,7 @@ import com.lihy.view.common.util.GuidUtil;
 import com.lihy.view.common.util.PasswordEncryptor;
 import com.lihy.view.common.util.ResponseResult;
 import com.lihy.view.user.mapper.UserMapper;
+import com.lihy.view.user.service.SysBillRuleService;
 import com.lihy.view.user.service.UserService;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -29,6 +30,8 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private SysBillRuleService sysBillRuleService;
 
     /**
      * 根据用户userId获取用户信息
@@ -72,7 +75,12 @@ public class UserServiceImpl implements UserService {
         String password = user.getPassword();
         String salt = UUID.randomUUID().toString();
         password = PasswordEncryptor.encryptPassword(password, salt);
-        user.setUserId(GuidUtil.getGuidNew());
+        ResponseResult<String> result = sysBillRuleService.doBillRuleByRulesCode("USER_ID");
+        if (null == result || !StringUtils.isNotBlank(result.getData())) {
+            //throw new BusinessException(SystemConstant.BILL_RULE_ERR.getCode(), SystemConstant.BILL_RULE_ERR.getName());
+        }
+        String userId = result.getData();
+        user.setUserId(userId);
         user.setPassword(password);
         user.setSalt(salt);
         int isInsert = userMapper.doRegister(user);

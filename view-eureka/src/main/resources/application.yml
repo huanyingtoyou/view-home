@@ -11,8 +11,12 @@ eureka:
     enableSelfPreservation: false
     eviction-interval-timer-in-ms: 5000
   client:
+    #false表示不向注册中心注册自己
     registerWithEureka: false
+    #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
     fetchRegistry: false
     #注册中心地址
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #将自己作为服务向其他服务注册中心注册自已
+      #defaultZone: http://10.25.25.24:8080/eureka/,http://10.25.25.39:8080/eureka/
