@@ -12,6 +12,7 @@
         <result column="CREATE_PERSON" jdbcType="VARCHAR" property="createPerson" />
         <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
         <result column="UPDATE_PERSON" jdbcType="VARCHAR" property="updatePerson" />
+        <result column="SALT" jdbcType="VARCHAR" property="salt" />
     </resultMap>
     <!-- 根据用户guid获取用户信息 -->
     <select id="getUserInfoByUserId" resultType="com.lihy.view.common.entity.User" parameterType="String">
@@ -35,12 +36,12 @@
     <insert id="doRegister" parameterType="com.lihy.view.common.entity.User">
         INSERT INTO t_user
         <trim prefix="(" suffix=")" suffixOverrides="," >
-            <if test="guid != null and guid != ''">
-                GUID,
-            </if>,
+            <if test="userId != null and userId != ''">
+                USER_ID,
+            </if>
             <if test="username != null and username != ''">
                 USERNAME,
-            </if>,
+            </if>
             <if test="password != null and password != ''">
                 PASSWORD,
             </if>
@@ -65,10 +66,13 @@
             <if test="updatePerson != null and updatePerson != ''">
                 UPDATE_PERSON
             </if>
+            <if test="salt != null and salt != ''">
+                SALT
+            </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides="," >
-            <if test="guid != null and guid != ''">
-                #{guid,jdbcType=VARCHAR},
+            <if test="userId != null and userId != ''">
+                #{userId,jdbcType=VARCHAR},
             </if>
             <if test="username != null and username != ''">
                 #{username,jdbcType=VARCHAR},
@@ -96,6 +100,9 @@
             </if>
             <if test="updatePerson != null and updatePerson != ''">
                 #{updatePerson,jdbcType=VARCHAR},
+            </if>
+            <if test="salt != null and salt != ''">
+                #{salt,jdbcType=VARCHAR},
             </if>
         </trim>;
     </insert>

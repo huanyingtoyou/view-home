@@ -12,7 +12,7 @@ spring:
     password:
 # mybatis mapper xml 配置
 mybatis:
-  mapper-locations: classpath:mybatis/*.xml
+  mapper-locations: classpath:mybatis/**/*.xml
 
 eureka:
   client:
