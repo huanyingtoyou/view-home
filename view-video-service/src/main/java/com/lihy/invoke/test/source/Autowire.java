@@ -6,6 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * 自定义autowire注解
  * @author lihy
  * @date 2018/09/29
  */

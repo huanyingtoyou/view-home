@@ -1,5 +1,8 @@
 package com.lihy.invoke.test;
 
+import com.lihy.invoke.test.service.BusinessObject;
+import com.lihy.invoke.test.source.BeanFactory;
+
 import java.lang.reflect.InvocationTargetException;
 
 /**

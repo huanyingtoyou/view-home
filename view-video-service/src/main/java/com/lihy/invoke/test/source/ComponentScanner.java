@@ -1,4 +1,6 @@
-package com.lihy.invoke.test;
+package com.lihy.invoke.test.source;
+
+import com.lihy.invoke.test.source.Component;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -6,6 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
+ * 扫描类注解
+ * 扫描带注解的类
  * @author lihy
  * @date 2018/09/29
  */
