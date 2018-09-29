@@ -10,7 +10,9 @@ import java.util.HashMap;
  * @date 2018/09/29
  */
 public class BeanFactory {
+    //存放bean的map
     private HashMap<String, Object> beanPool;
+    //存放注解类的map，类似controller
     private HashMap<String, String> components;
 
     public BeanFactory(String packageName) {
@@ -25,10 +27,11 @@ public class BeanFactory {
     public Object getBean(String id) throws ClassNotFoundException,
             InstantiationException, IllegalAccessException,
             NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
+        //判断bean的map里存的是否有，如果有这个bean就返回
         if (beanPool.containsKey(id)) {
             return beanPool.get(id);
         }
-
+        //判断注入的bean所代表的类是否在扫描类的注解map中，如果在，就把这个类给bean赋值，那么用autowire注解的bean就会有值了
         if (components.containsKey(id)) {
             Object bean = Class.forName(components.get(id)).newInstance();
             bean = assemlyMember(bean);
