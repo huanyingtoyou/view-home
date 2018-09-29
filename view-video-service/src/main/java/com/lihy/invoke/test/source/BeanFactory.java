@@ -46,11 +46,13 @@ public class BeanFactory {
             InstantiationException, IllegalAccessException,
             NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
         Class cl = obj.getClass();
+        //循环遍历类中的所有属性，不包括父类的属性
         for (Field field : cl.getDeclaredFields()) {
             Autowire autowire = field.getAnnotation(Autowire.class);
-
             if (null != autowire) {
+                //获取类中指定的方法
                 Method method = cl.getMethod("set" + captureName(field.getName()), field.getType());
+                //执行方法，为类中的注解bean赋值
                 method.invoke(obj, getBean(autowire.id()));
             }
         }
