@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class BeanFactory {
     //存放bean的map
     private HashMap<String, Object> beanPool;
-    //存放注解类的map，类似controller
+    //存放注解类的map，存放包括但不限于注解@controller
     private HashMap<String, String> components;
 
     public BeanFactory(String packageName) {
@@ -25,6 +25,18 @@ public class BeanFactory {
         components = ComponentScanner.getComponentClassName(packageName);
     }
 
+    /**
+     * 给bean赋值
+     * @param id
+     * @return
+     * @throws ClassNotFoundException
+     * @throws InstantiationException
+     * @throws IllegalAccessException
+     * @throws NoSuchMethodException
+     * @throws SecurityException
+     * @throws IllegalArgumentException
+     * @throws InvocationTargetException
+     */
     public Object getBean(String id) throws ClassNotFoundException,
             InstantiationException, IllegalAccessException,
             NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
@@ -42,6 +54,21 @@ public class BeanFactory {
         throw new ClassNotFoundException();
     }
 
+    /**
+     * 遍历类里的所有属性
+     * 判断是否有autowire注解
+     * 获取类中的set方法
+     * 最后为类中autowire注解注释的属性赋值
+     * @param obj
+     * @return
+     * @throws ClassNotFoundException
+     * @throws InstantiationException
+     * @throws IllegalAccessException
+     * @throws NoSuchMethodException
+     * @throws SecurityException
+     * @throws IllegalArgumentException
+     * @throws InvocationTargetException
+     */
     private Object assemlyMember(Object obj) throws ClassNotFoundException,
             InstantiationException, IllegalAccessException,
             NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException {
@@ -59,6 +86,11 @@ public class BeanFactory {
         return obj;
     }
 
+    /**
+     * 转换首字母大写
+     * @param name
+     * @return
+     */
     public static String captureName(String name) {
         char[] chars = name.toCharArray();
         chars[0] -= 32;

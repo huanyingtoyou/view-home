@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @date 2018/04/16
  */
 @SpringBootApplication
-//@EnableEurekaClient
+@EnableEurekaClient
 @ComponentScan(basePackages = {"com.lihy.view.user"})
 @MapperScan("com.lihy.view.user.mapper.**")
 public class UserServiceApplication {
