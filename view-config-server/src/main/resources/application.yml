@@ -16,3 +16,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://lihy:520@localhost:8088/eureka/
+management:
+  security:
+    enabled: false

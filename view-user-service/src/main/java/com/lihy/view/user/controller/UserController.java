@@ -8,6 +8,8 @@ import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
  * @author lihy
  * @date 2018/04/17
  */
+@RefreshScope
 @RestController
 @RequestMapping("/user")
 @Api(value = "用户操作控制器", description = "获取用户信息以及登录注册等", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -60,5 +63,13 @@ public class UserController {
     public ResponseResult<Void> login(@RequestBody User user) {
         ResponseResult<Void> responseResult = userService.doLogin(user);
         return responseResult;
+    }
+
+    @Value("${profile}")
+    private String profile;
+
+    @GetMapping("/getName")
+    public String getName() {
+        return this.profile;
     }
 }
