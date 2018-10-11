@@ -2,7 +2,7 @@ spring:
   application:
     name: view-view
 server:
-  port: 8088
+  port: 8080
 #eureka:
   #client:
     #serviceUrl:

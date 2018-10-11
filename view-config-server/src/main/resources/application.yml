@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: view-config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/huanyingtoyou/view-home-config
+          search-paths: repository
+          username: huanyingtoyou
+          password: 13526283875wyzd
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://lihy:520@localhost:8088/eureka/
