@@ -5,11 +5,13 @@ import com.lihy.view.common.entity.User;
 import com.lihy.view.common.util.ResponseResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 /**
  * @author lihy
  * @date 2018/04/17
  */
+@Component
 public class UserApiHystrixFallback implements UserApi {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserApiHystrixFallback.class);
     @Override

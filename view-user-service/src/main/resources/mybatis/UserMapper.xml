@@ -15,7 +15,7 @@
         <result column="SALT" jdbcType="VARCHAR" property="salt" />
     </resultMap>
     <!-- 根据用户guid获取用户信息 -->
-    <select id="getUserInfoByUserId" resultType="com.lihy.view.common.entity.User" parameterType="String">
+    <select id="getUserInfoByUserId" resultMap="UserResultMap" parameterType="String">
         SELECT
           *
         FROM t_user t

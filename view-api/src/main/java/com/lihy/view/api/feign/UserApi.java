@@ -3,9 +3,7 @@ package com.lihy.view.api.feign;
 import com.lihy.view.common.entity.User;
 import com.lihy.view.common.util.ResponseResult;
 import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 用户服务api
@@ -21,15 +19,15 @@ public interface UserApi {
      * @param userId
      * @return
      */
-    @PostMapping("/userInfo")
-    ResponseResult<User> getUserInfoByUserId(@RequestParam String userId);
+    @RequestMapping(value = "/getUserInfoByUserId", method = RequestMethod.GET)
+    ResponseResult<User> getUserInfoByUserId(@RequestParam(value = "userId") String userId);
 
     /**
      * 用户注册
      * @param user
      * @return
      */
-    @PostMapping("/register")
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     ResponseResult<Void> doRegister(User user);
     /**
      * 用户登录
@@ -37,6 +35,6 @@ public interface UserApi {
      * username 用户名
      * @return
      */
-    @PostMapping("/login")
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     ResponseResult<Void> doLogin(User user);
 }
