@@ -17,6 +17,7 @@
         <module>view-photo-service</module>
         <module>view-api</module>
         <module>view-config-server</module>
+        <module>view-sleuth-zipkin-server</module>
     </modules>
 
 
