@@ -6,7 +6,6 @@ import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
-import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -14,14 +13,12 @@ import org.springframework.context.annotation.ComponentScan;
  * 该注解还包括了EnableDiscoveryClient和EnableCircuitBreaker
  * 注解ComponentScan扫描包名下的服务
  * 注解EnableFeignClients指明feign接口定义
- * 注解EnableHystrixDashboard熔断监控界面支持
  * @author lihy
  * @date 2018/04/16
  */
 @SpringCloudApplication
 @ComponentScan(basePackages = {"com.lihy.view"})
 @EnableFeignClients(basePackages = "com.lihy.view.api")
-@EnableHystrixDashboard
 public class ViewApplication {
     public static void main(String[] args) {
         SpringApplication.run(ViewApplication.class, args);

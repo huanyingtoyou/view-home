@@ -18,6 +18,8 @@
         <module>view-api</module>
         <module>view-config-server</module>
         <module>view-sleuth-zipkin-server</module>
+        <module>view-zuul</module>
+        <module>view-hystrix-dashboard</module>
     </modules>
 
 

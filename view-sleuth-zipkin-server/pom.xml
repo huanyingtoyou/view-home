@@ -2,67 +2,50 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.lihy.view</groupId>
-    <artifactId>view-view</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
-
-    <!-- spring boot依赖 -->
     <parent>
-        <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
         <version>1.5.8.RELEASE</version>
     </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>view-sleuth-zipkin-server</artifactId>
+    <groupId>com.lihy.view</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.lihy.view</groupId>
-            <artifactId>view-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <!-- web服务支持 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!-- 监控运行支持 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <!-- 模板页面支持 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
         <!-- 服务注册支持 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-        <!-- feign支持 -->
+        <!-- zipkin服务支持 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-server</artifactId>
         </dependency>
-        <!-- 服务降级及熔断支持 -->
+        <!-- zipkin服务ui支持 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-ui</artifactId>
+        </dependency>
+        <!-- 程序运行监控 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <!-- 配置中心支持 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- 配置中心自动刷新支持及其他bus消息支持 -->
+        <!-- 消息总线支持 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
@@ -81,7 +64,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <!-- 添加spring boot的maven插件 -->
     <build>
         <plugins>
@@ -91,5 +73,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
