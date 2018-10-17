@@ -34,9 +34,9 @@ public class UserController {
      * @param userId
      * @return
      */
-    @GetMapping(value = "/getUserInfoByUserId")
+    @GetMapping(value = "/getUserInfoByUserId/{userId}")
     @ApiOperation(value = "获取用户信息", notes = "根据用户userId获取用户信息")
-    public ResponseResult<User> getUserInfoByUserId(@RequestParam(value = "userId") String userId) {
+    public ResponseResult<User> getUserInfoByUserId(@PathVariable String userId) {
         ResponseResult<User> responseResult = userService.getUserInfoByUserId(userId);
         return responseResult;
     }

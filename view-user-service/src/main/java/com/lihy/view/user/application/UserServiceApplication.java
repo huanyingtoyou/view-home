@@ -10,12 +10,14 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 用户微服务
+ *
+ * 注解SpringBootApplication包含注解ComponentScan
  * @author lihy
  * @date 2018/04/16
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.lihy.view.user"})
 @EnableEurekaClient
-@ComponentScan(basePackages = {"com.lihy.view.user"})
+//@ComponentScan(basePackages = {"com.lihy.view.user"})
 @MapperScan("com.lihy.view.user.mapper.**")
 public class UserServiceApplication {
     public static void main(String[] args) {

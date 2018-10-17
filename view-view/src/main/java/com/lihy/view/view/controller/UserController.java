@@ -17,8 +17,8 @@ public class UserController {
     @Autowired
     private UserApi userApi;
 
-    @GetMapping("/getUserInfoByUserId")
-    public ResponseResult<User> getUserInfoByUserId(@RequestParam(value = "userId") String userId) {
+    @GetMapping("/getUserInfoByUserId/{userId}")
+    public ResponseResult<User> getUserInfoByUserId(@PathVariable String userId) {
         return userApi.getUserInfoByUserId(userId);
     }
 }

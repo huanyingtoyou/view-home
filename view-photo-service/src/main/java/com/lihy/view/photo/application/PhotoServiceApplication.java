@@ -9,9 +9,9 @@ import org.springframework.context.annotation.ComponentScan;
  * @author lihy
  * @date 2018/10/11
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.lihy.view.photo"})
 @EnableEurekaClient
-@ComponentScan(basePackages = {"com.lihy.view.photo"})
+//@ComponentScan(basePackages = {"com.lihy.view.photo"})
 public class PhotoServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(PhotoServiceApplication.class, args);
