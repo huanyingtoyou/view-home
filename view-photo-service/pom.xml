@@ -24,7 +24,7 @@
     <dependencies>
         <dependency>
             <groupId>com.lihy.view</groupId>
-            <artifactId>view-common</artifactId>
+            <artifactId>view-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!-- 提供springMvc的支持 -->
@@ -57,6 +57,17 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
+        <!-- feign支持 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+        <!-- 服务降级及熔断支持 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
     </dependencies>
 

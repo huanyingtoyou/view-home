@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.*;
  * @author lihy
  * @date 2018/04/17
  */
-@FeignClient(name = "view-user-service", path = "/user", fallback = UserApiHystrixFallback.class)
-//@FeignClient(name = "view-user-service", path = "/user", fallbackFactory = UserApiHystrixFallbackFactory.class)
+//@FeignClient(name = "view-user-service", path = "/user", fallback = UserApiHystrixFallback.class)
+@FeignClient(name = "view-user-service", path = "/user", fallbackFactory = UserApiHystrixFallbackFactory.class)
 public interface UserApi {
 
     /**
