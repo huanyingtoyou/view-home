@@ -19,3 +19,9 @@ eureka:
 management:
   security:
     enabled: false
+security:
+  basic:
+    enabled: true #开启基于http basic的认证
+  user:
+    name: lihy
+    password: 123456

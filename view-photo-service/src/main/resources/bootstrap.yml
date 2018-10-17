@@ -7,4 +7,4 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8888/
+      uri: http://lihy:123456@localhost:8888/
