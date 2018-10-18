@@ -7,4 +7,5 @@ spring:
     config:
       label: master
       profile: dev
+      #配置中心地址
       uri: http://lihy:123456@localhost:8888/
