@@ -1,0 +1,9 @@
+server:
+  port: 8090
+eureka:
+  instance:
+    hostname: eureka3
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://lihy:520@eureka1:8088/eureka/,http://lihy:520@eureka2:8089/eureka/

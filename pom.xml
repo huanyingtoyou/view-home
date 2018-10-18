@@ -12,6 +12,7 @@
         <module>view-view</module>
         <module>view-common</module>
         <module>view-eureka</module>
+        <module>view-eureka-cluster</module>
         <module>view-user-service</module>
         <module>view-user-service-second</module>
         <module>view-video-service</module>

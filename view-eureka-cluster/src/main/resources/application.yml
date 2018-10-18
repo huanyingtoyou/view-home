@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: view-eureka
+  profiles:
+    active: server1
+security:
+  basic:
+    enabled: true
+  user:
+    name: lihy
+    password: 520
