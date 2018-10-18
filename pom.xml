@@ -21,6 +21,7 @@
         <module>view-sleuth-zipkin-server</module>
         <module>view-zuul</module>
         <module>view-hystrix-dashboard</module>
+        <module>view-hystrix-turbine</module>
     </modules>
 
 
