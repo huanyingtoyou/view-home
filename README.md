@@ -5,13 +5,15 @@
 2、view-config-server：配置中心server<br>
 3、view-hystrix-dashboard：Hystrix Dashboard可视化监控<br>
 4、view-sleuth-zipkin-server：服务链路跟踪<br>
-5、view-zuul：网关路由<br>
+5、view-zuul：网关路由（zuul组件包含ribbon，可以实现负载均衡）<br>
 6、view-api：feign接口<br>
 7、view-common：实体类、工具类等<br>
 8、view-user-service：测试的用户服务（有几个测试服务）<br>
-9、view-photo-service：测试的照片服务（待开发）<br>
-10、view-video-service：测试的视频服务（待开发）<br>
-11、view-view：web<br>
+9、view-user-service-second：复制的上面的user-service服务，为了测试负载均衡<br>
+10、view-photo-service：测试的照片服务（待开发）<br>
+11、view-video-service：测试的视频服务（待开发）<br>
+12、view-view：web<br>
 
 ### 使用说明
-1、相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，
+1、相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。
+

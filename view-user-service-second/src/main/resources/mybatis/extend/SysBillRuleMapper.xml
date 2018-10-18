@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lihy.view.user.mapper.SysBillRuleMapper" >
+  <select id="getNewBillRule" resultMap="BaseResultMap"  >
+    <!-- 获取按日期递增的单据号,根据有没有日期格式来判断是递增还是循环 -->
+    SET @rulesCode := #{rulesCode,jdbcType=VARCHAR};
+    SET @date := now();
+    update T_SYS_BILL_RULE
+    <set>
+     	CURRENT_VALUE = case when DATE_TYPE is null or DATE_TYPE='' then CURRENT_VALUE + 1 else 
+			  (case when DATE_STRING=date_format(@date ,DATE_TYPE) then CURRENT_VALUE + 1 else 1 end) end,
+        DATE_STRING   = date_format(@date ,DATE_TYPE),
+        UPDATE_DATE   = @date ,
+        UPDATE_USER_ID   = #{dateTime,jdbcType=VARCHAR}
+    </set>
+    <where>
+    	RULES_CODE = @rulesCode;
+    </where>
+    SELECT * FROM T_SYS_BILL_RULE WHERE RULES_CODE = @rulesCode;
+  </select>
+</mapper>

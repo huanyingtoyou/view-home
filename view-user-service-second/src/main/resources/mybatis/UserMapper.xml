@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lihy.view.user.mapper.UserMapper">
+    <resultMap id="UserResultMap" type="com.lihy.view.common.entity.User">
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId" />
+        <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+        <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+        <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+        <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+        <result column="BIRTH_DATE" jdbcType="VARCHAR" property="birthDate" />
+        <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+        <result column="CREATE_PERSON" jdbcType="VARCHAR" property="createPerson" />
+        <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+        <result column="UPDATE_PERSON" jdbcType="VARCHAR" property="updatePerson" />
+        <result column="SALT" jdbcType="VARCHAR" property="salt" />
+    </resultMap>
+    <!-- 根据用户guid获取用户信息 -->
+    <select id="getUserInfoByUserId" resultMap="UserResultMap" parameterType="String">
+        SELECT
+          *
+        FROM t_user t
+        WHERE t.USER_ID = #{userId, jdbcType = VARCHAR}
+    </select>
+
+    <!-- 根据用户名获取用户信息 -->
+    <select id="getUserInfoByUsername" resultMap="UserResultMap" parameterType="com.lihy.view.common.entity.User">
+        SELECT
+          *
+        FROM t_user t
+        WHERE
+        1 = 1
+        AND t.USERNAME = #{username, jdbcType = VARCHAR}
+    </select>
+
+    <!-- 用户注册 -->
+    <insert id="doRegister" parameterType="com.lihy.view.common.entity.User">
+        INSERT INTO t_user
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="userId != null and userId != ''">
+                USER_ID,
+            </if>
+            <if test="username != null and username != ''">
+                USERNAME,
+            </if>
+            <if test="password != null and password != ''">
+                PASSWORD,
+            </if>
+            <if test="email != null and email != ''">
+                EMAIL,
+            </if>
+            <if test="address != null and address != ''">
+                ADDRESS,
+            </if>
+            <if test="birthDate != null and birthDate != ''">
+                BIRTH_DATE,
+            </if>
+            <if test="createDate != null and createDate != ''">
+                CREATE_DATE,
+            </if>
+            <if test="createPerson != null and createPerson != ''">
+                CREATE_PERSON,
+            </if>
+            <if test="updateDate != null and updateDate != ''">
+                UPDATE_DATE,
+            </if>
+            <if test="updatePerson != null and updatePerson != ''">
+                UPDATE_PERSON
+            </if>
+            <if test="salt != null and salt != ''">
+                SALT
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="userId != null and userId != ''">
+                #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="username != null and username != ''">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null and password != ''">
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="email != null and email != ''">
+                #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null and address != ''">
+                #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="birthDate != null and birthDate != ''">
+                #{birthDate,jdbcType=VARCHAR},
+            </if>
+            <if test="createDate != null and createDate != ''">
+                #{createDate,jdbcType=VARCHAR},
+            </if>
+            <if test="createPerson != null and createPerson != ''">
+                #{createPerson,jdbcType=VARCHAR},
+            </if>
+            <if test="updateDate != null and updateDate != ''">
+                #{updateDate,jdbcType=VARCHAR},
+            </if>
+            <if test="updatePerson != null and updatePerson != ''">
+                #{updatePerson,jdbcType=VARCHAR},
+            </if>
+            <if test="salt != null and salt != ''">
+                #{salt,jdbcType=VARCHAR},
+            </if>
+        </trim>;
+    </insert>
+</mapper>
