@@ -7,7 +7,7 @@
 4、view-hystrix-dashboard：Hystrix Dashboard可视化监控<br>
 5、view-hystrix-turbine：Hystrix Turbine可视化集群监控<br>
 6、view-sleuth-zipkin-server：服务链路跟踪<br>
-7、view-zuul：网关路由（zuul组件包含ribbon，可以实现负载均衡）<br>
+7、view-zuul：网关路由（zuul组件包含ribbon，可以实现负载均衡），可以通过zuul过滤器过滤请求<br>
 8、view-api：feign接口<br>
 9、view-common：实体类、工具类等<br>
 10、view-user-service：测试的用户服务（有几个测试服务）<br>
