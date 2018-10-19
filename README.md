@@ -3,7 +3,7 @@
 ### 模块说明
 1、view-eureka：eureka服务注册中心<br>
 2、view-eureka-cluster：eureka server的高可用<br>
-3、view-config-server：配置中心server<br>
+3、view-config-server：配置中心server，配置中心在[view-home-config](https://github.com/huanyingtoyou/view-home-config)<br>
 4、view-hystrix-dashboard：Hystrix Dashboard可视化监控<br>
 5、view-hystrix-turbine：Hystrix Turbine可视化集群监控<br>
 6、view-sleuth-zipkin-server：服务链路跟踪<br>
