@@ -15,6 +15,7 @@
 12、view-photo-service：测试的照片服务（待开发）<br>
 13、view-video-service：测试的视频服务（待开发）<br>
 14、view-view：web<br>
+15、view-sleuth-elk：sleuth与elasticsearch、logstash、kibana的整合，未完成
 
 ### 使用说明
 相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。

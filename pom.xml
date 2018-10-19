@@ -23,6 +23,7 @@
         <module>view-zuul</module>
         <module>view-hystrix-dashboard</module>
         <module>view-hystrix-turbine</module>
+        <module>view-sleuth-elk</module>
     </modules>
 
 

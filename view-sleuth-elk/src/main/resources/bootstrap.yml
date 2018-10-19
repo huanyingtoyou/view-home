@@ -1,0 +1,10 @@
+server:
+  port: 8999
+spring:
+  application:
+    name: view-sleuth-elk
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://lihy:123456@localhost:8888/
