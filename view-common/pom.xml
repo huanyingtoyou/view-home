@@ -15,13 +15,15 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <!-- 添加spring boot的maven插件 -->
-    <build>
+    <!-- 这里不要添加spring boot的maven插件 -->
+    <!-- 该插件会在Maven的package后进行二次打包，目的为了生成可执行jar包 -->
+    <!-- 如果定义了这个插件，会报错提示没有找到main函数 -->
+    <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 </project>

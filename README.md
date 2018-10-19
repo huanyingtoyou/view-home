@@ -20,3 +20,6 @@
 ### 使用说明
 相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。
 
+### 注意
+windows服务器启动jar包后，控制输出日志可能乱码，需要在项目中添加logback.xml配置日志文件，并且将<charset>UTF-8</charset>注释掉或者删掉。
+
