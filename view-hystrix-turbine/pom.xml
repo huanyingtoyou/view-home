@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>view-turbine</artifactId>
+    <artifactId>view-hystrix-turbine</artifactId>
     <groupId>com.lihy.view</groupId>
     <version>0.0.1-SNAPSHOT</version>
 

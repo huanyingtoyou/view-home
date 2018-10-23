@@ -2,7 +2,7 @@ server:
   port: 8011
 spring:
   application:
-    name: view-turbine
+    name: view-hystrix-turbine
   cloud:
     config:
       label: master
