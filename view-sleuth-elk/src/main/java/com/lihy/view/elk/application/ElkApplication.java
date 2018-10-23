@@ -8,7 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @author lihy
  * @date 2018/10/18
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.lihy.view.elk")
 @EnableEurekaClient
 public class ElkApplication {
     public static void main(String[] args) {
