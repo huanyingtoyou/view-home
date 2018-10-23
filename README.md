@@ -18,8 +18,11 @@
 15、view-sleuth-elk：sleuth与elasticsearch、logstash、kibana的整合，未完成
 
 ### 使用说明
-相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。
+1、相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。
+2、eureka server的账号为lihy，密码为520，可修改；
+3、user-service下有数据库文件，可以执行，数据库名字这里为view，可以修改；
 
 ### 注意
-windows服务器启动jar包后，控制输出日志可能乱码，需要在项目中添加logback.xml配置日志文件，并且将<[charset>UTF-8</charset]>注释掉或者删掉。
+1、记得安装rabbitmq，这里就不叙述rabbitmq的安装过程，config server自动刷新用到了mq；
+2、在windows服务器启动jar包后，控制输出日志可能乱码，需要在项目中添加logback.xml配置日志文件，并且将<[charset>UTF-8</charset]>注释掉或者删掉；linux服务器待试。
 
