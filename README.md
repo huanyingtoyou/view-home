@@ -15,14 +15,16 @@
 12、view-photo-service：测试的照片服务（待开发）<br>
 13、view-video-service：测试的视频服务（待开发）<br>
 14、view-view：web<br>
-15、view-sleuth-elk：sleuth与elasticsearch、logstash、kibana的整合，进度50%
+15、view-sleuth-elk：sleuth与elasticsearch、logstash、kibana的整合
 
 ### 使用说明
 1、相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。<br>
 2、eureka server的账号为lihy，密码为520，可修改；<br>
 3、user-service下有数据库文件，可以执行，数据库名字这里为view，可以修改；<br>
+4、view-sleuth-elk模块下有logstash.conf文件，是本次测试所用的logstash文件，可以直接复制放到安装的logstash的config目录下或者其他地方
 
 ### 注意
 1、记得安装rabbitmq，这里就不叙述rabbitmq的安装过程，config server自动刷新用到了mq；<br>
 2、在windows服务器启动jar包后，控制输出日志可能乱码，需要在项目中添加logback.xml配置日志文件，并且将<[charset>UTF-8</charset]>注释掉或者删掉；linux服务器待试。<br>
+3、测试view-sleuth-elk时（windows服务器），依次安装elasticsearch、kibana、logstash，前两个均无需配置，logstash需要建立一个.conf文件，用于指明logstash的日志输入和输出，本次测试，输入为该模块的json日志文件，输出为elasticsearch
 
