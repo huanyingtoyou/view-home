@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="view-eureka:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4ec950f-bb55-4ac5-97cb-46f6fefd42e7" name="Default" comment="系统编号生成规则">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    <list default="true" id="e4ec950f-bb55-4ac5-97cb-46f6fefd42e7" name="Default" comment="增加sleuth与elk的整合模块">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,133 +19,136 @@
     <ignored path="$PROJECT_DIR$/view-video-service/target/" />
     <ignored path="$PROJECT_DIR$/view-photo-service/target/" />
     <ignored path="$PROJECT_DIR$/view-api/target/" />
+    <ignored path="$PROJECT_DIR$/view-config-server/target/" />
+    <ignored path="$PROJECT_DIR$/view-sleuth-zipkin-server/target/" />
+    <ignored path="$PROJECT_DIR$/view-zuul/target/" />
+    <ignored path="$PROJECT_DIR$/view-hystrix-dashboard/target/" />
+    <ignored path="$PROJECT_DIR$/view-user-service-second/target/" />
+    <ignored path="$PROJECT_DIR$/view-turbine/target/" />
+    <ignored path="$PROJECT_DIR$/view-eureka-cluster/target/" />
+    <ignored path="$PROJECT_DIR$/view-sleuth-elk/target/" />
+    <ignored path="$PROJECT_DIR$/view-hystrix-turbine/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2120810044">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.131" value="1" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.66" value="1" />
+          <entry key="project.opened" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="17" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="55" />
+          <entry key="jpg" value="3" />
+          <entry key="js" value="4" />
+          <entry key="json" value="2" />
+          <entry key="log" value="2" />
+          <entry key="md" value="7" />
+          <entry key="png" value="2" />
+          <entry key="pom" value="8" />
+          <entry key="sql" value="1" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="56" />
+          <entry key="yml" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="17" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="Image" value="5" />
+          <entry key="JAVA" value="55" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="4" />
+          <entry key="Log" value="1" />
+          <entry key="Markdown" value="7" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="64" />
+          <entry key="YAML" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="9" />
+          <entry key="java" value="1495" />
+          <entry key="md" value="1856" />
+          <entry key="txt" value="340" />
+          <entry key="xml" value="1655" />
+          <entry key="yml" value="326" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1495" />
+          <entry key="Markdown" value="1856" />
+          <entry key="PLAIN_TEXT" value="349" />
+          <entry key="XML" value="1655" />
+          <entry key="YAML" value="326" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-eureka/src/main/resources/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view-hystrix-turbine/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="472">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/mapper/UserMapper.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="280">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysBillRuleServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="86" column="27" lean-forward="false" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysBillRuleService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/SysBillRuleService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="67" lean-forward="false" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysBillRule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/entity/SysBillRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysBillRuleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/extend/SysBillRuleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-              <folding>
-                <marker date="1536301791345" expanded="true" signature="855:914" ph="SELECT * FRO... T_SYS_BILL_RULE" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysBillRuleMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/mapper/SysBillRuleMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysBillRuleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/SysBillRuleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
-              <folding>
-                <marker date="1536300491317" expanded="true" signature="4681:4792" ph="select from t_sys_bill_rule" />
-                <marker date="1536300491317" expanded="true" signature="4878:4943" ph="delete from " />
-                <marker date="1536300491317" expanded="true" signature="5056:5083" ph="delete from " />
-                <marker date="1536300491317" expanded="true" signature="5273:6107" ph="insert into t_sys_bill_rule... " />
-                <marker date="1536300491317" expanded="true" signature="9174:9210" ph="select count... t_sys_bill_rule" />
-                <marker date="1536300491317" expanded="true" signature="11542:12527" ph="update t_sys... " />
-                <marker date="1536300491317" expanded="true" signature="12748:14456" ph="update t_sys... " />
-                <marker date="1536300491317" expanded="true" signature="14565:15434" ph="update t_sys... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceApplication.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/application/UserServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1060">
-              <caret line="53" column="63" lean-forward="false" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+            <state relative-caret-position="336">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,32 +156,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-common/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view-eureka/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view-config-server/src/main/java/com/lihy/view/config/application/ConfigServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="17" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EurekaApplication.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view-eureka/src/main/java/com/lihy/view/eureka/application/EurekaApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="80">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="260">
+                <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view-eureka-cluster/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view-sleuth-elk/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -188,69 +221,90 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getUserInfo</find>
+      <find>getNewBillRule</find>
+      <find>dateTime</find>
+      <find>build</find>
+      <find>mysql</find>
+      <find>bus</find>
+      <find>bus/</find>
+      <find>Adding property</find>
+      <find>bus/refresh</find>
+      <find>refreshed</find>
+      <find>getUserInfoByUserId</find>
+      <find>pa</find>
+      <find>@Component</find>
+      <find>request to</find>
+      <find>hystrix.stream</find>
+      <find>view-turbine</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/view-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/view-eureka/src/main/java/com/lihy/view/eureka/application/EurekaApplication.java" />
-        <option value="$PROJECT_DIR$/view-view/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/application/ViewApplication.java" />
-        <option value="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/PhotoController.java" />
-        <option value="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/VideoController.java" />
-        <option value="$PROJECT_DIR$/view-view/pom.xml" />
-        <option value="$PROJECT_DIR$/view-video-service/pom.xml" />
-        <option value="$PROJECT_DIR$/view-photo-service/pom.xml" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/BaseResponseMsg.java" />
-        <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/ResponseResult.java" />
-        <option value="$PROJECT_DIR$/view-api/pom.xml" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/application/UserServiceApplication.java" />
-        <option value="$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/service/UserService.java" />
-        <option value="$PROJECT_DIR$/view-user-service/pom.xml" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/AuthController.java" />
-        <option value="$PROJECT_DIR$/view-eureka/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/view-eureka/src/banner.md" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/view-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/view-hystrix-dashboard/src/main/java/com/lihy/view/hystrixDashboard/application/HystrixDashboardApplication.java" />
+        <option value="$PROJECT_DIR$/view-zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/view-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApiHystrixFallback.java" />
-        <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/entity/User.java" />
-        <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/PasswordEncryptor.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/constant/SystemConstant.java" />
+        <option value="$PROJECT_DIR$/view-user-service/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-photo-service/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-config-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/view-view/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-sleuth-zipkin-server/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApiHystrixFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/view-hystrix-dashboard/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-photo-service/src/main/java/com/lihy/view/photo/controller/PhotoController.java" />
         <option value="$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApi.java" />
-        <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/GuidUtil.java" />
+        <option value="$PROJECT_DIR$/view-photo-service/src/main/java/com/lihy/view/photo/application/PhotoServiceApplication.java" />
+        <option value="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/application/ViewApplication.java" />
+        <option value="$PROJECT_DIR$/view-user-service-second/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/view-zuul/src/main/java/com/lihy/view/zuul/filter/PreRequestLogFilter.java" />
+        <option value="$PROJECT_DIR$/view-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/view-zuul/src/main/java/com/lihy/view/zuul/application/ZuulApplication.java" />
+        <option value="$PROJECT_DIR$/view-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/view-turbine/src/main/java/com/lihy/view/turbine/application/TurbineApplication.java" />
+        <option value="$PROJECT_DIR$/view-zuul/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-turbine/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-hystrix-turbine/src/main/java/com/lihy/view/turbine/application/TurbineApplication.java" />
+        <option value="$PROJECT_DIR$/view-user-service-second/pom.xml" />
+        <option value="$PROJECT_DIR$/view-photo-service/pom.xml" />
+        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/application/UserServiceApplication.java" />
+        <option value="$PROJECT_DIR$/view-hystrix-turbine/src/main/java/com/lihy/view/turbine/application/HystrixTurbineApplication.java" />
+        <option value="$PROJECT_DIR$/view-eureka/src/main/resources/application-server1.yml" />
+        <option value="$PROJECT_DIR$/view-eureka/src/main/resources/application-server2.yml" />
+        <option value="$PROJECT_DIR$/view-eureka/src/main/resources/application-server3.yml" />
         <option value="$PROJECT_DIR$/view-eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/view-eureka-cluster/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/view-sleuth-elk/pom.xml" />
+        <option value="$PROJECT_DIR$/view-sleuth-elk/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/view-sleuth-elk/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-user-service/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/view-eureka/src/main/java/com/lihy/view/eureka/application/EurekaApplication.java" />
         <option value="$PROJECT_DIR$/view-common/pom.xml" />
-        <option value="$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/entity/SysBillRule.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/mapper/SysBillRuleMapper.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/user/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/extend/SysBillRuleMapper.xml" />
-        <option value="$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/SysBillRuleService.java" />
+        <option value="$PROJECT_DIR$/view-api/pom.xml" />
+        <option value="$PROJECT_DIR$/view-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/view-user-service/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/view-sleuth-elk/src/main/java/com/lihy/view/elk/application/ElkApplication.java" />
+        <option value="$PROJECT_DIR$/view-sleuth-elk/src/main/java/com/lihy/view/elk/controller/ElkController.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/view-hystrix-turbine/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/view-hystrix-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -272,11 +326,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="view-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="view-sleuth-elk" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="view-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="view-sleuth-elk" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -293,108 +347,77 @@
     <entry key="Project Default">
       <profile-state>
         <expanded-state>
+          <State />
           <State>
-            <id />
+            <id>Android</id>
           </State>
           <State>
-            <id>Android &gt; Lint &gt; Correctness</id>
+            <id>CodeSpring CoreSpring</id>
           </State>
           <State>
-            <id>Android &gt; Lint &gt; Internationalization &gt; Bidirectional Text</id>
+            <id>CorrectnessLintAndroid</id>
           </State>
           <State>
-            <id>Android &gt; Lint &gt; Performance</id>
+            <id>GSPGrailsGroovy</id>
           </State>
           <State>
-            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+            <id>General</id>
           </State>
           <State>
-            <id>Android Lint for Kotlin</id>
-          </State>
-          <State>
-            <id>Declaration redundancyJava</id>
-          </State>
-          <State>
-            <id>Google Web Toolkit issues</id>
+            <id>GrailsGroovy</id>
           </State>
           <State>
             <id>Groovy</id>
           </State>
           <State>
-            <id>JUnit issuesJava</id>
-          </State>
-          <State>
             <id>Java</id>
-          </State>
-          <State>
-            <id>Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
           </State>
           <State>
             <id>Kotlin</id>
           </State>
           <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>MessagesCorrectnessLintAndroid</id>
+          </State>
+          <State>
             <id>Numeric issuesJava</id>
           </State>
           <State>
-            <id>Performance issuesJava</id>
+            <id>PerformanceLintAndroid</id>
           </State>
           <State>
-            <id>Probable bugsGroovy</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>Probable bugsJavaScript</id>
-          </State>
-          <State>
-            <id>Redundant constructsKotlin</id>
-          </State>
-          <State>
-            <id>Serialization issuesJava</id>
+            <id>Plugin DevKit</id>
           </State>
           <State>
             <id>Spring</id>
           </State>
           <State>
-            <id>Spring AOPSpring</id>
-          </State>
-          <State>
-            <id>Threading issuesJava</id>
+            <id>Spring CoreSpring</id>
           </State>
           <State>
             <id>XPath</id>
           </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaInjectionPointsAutowiringInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -405,71 +428,42 @@
             <path>
               <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
               <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-api" type="462c0819:PsiDirectoryNode" />
+              <item name="view-view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
               <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-api" type="462c0819:PsiDirectoryNode" />
+              <item name="view-view" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
               <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-api" type="462c0819:PsiDirectoryNode" />
+              <item name="view-view" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
               <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-eureka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-user-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-video-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-video-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
-              <item name="view-view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="view-home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="view-home" type="462c0819:PsiDirectoryNode" />
               <item name="view-view" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="view-home" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
@@ -478,30 +472,40 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540347847710" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../view-home-config" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42068964" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\view-home\view-user-service\src\main\resources\mybatis\extend" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\view-home\view-sleuth-elk\src\main\resources" />
+      <recent name="E:\IdeaProjects\view-home\view-user-service\src\main\resources\db" />
+      <recent name="E:\IdeaProjects\view-home\view-user-service\src\main\resources" />
+      <recent name="E:\IdeaProjects\view-home" />
+      <recent name="E:\IdeaProjects\view-home\view-eureka\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lihy.view.api.feign" />
       <recent name="com.lihy.view.common.util" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\view-home\view-user-service\src\main\java\com\lihy\view\user\service\impl" />
-      <recent name="E:\IdeaProjects\view-home\view-user-service\src\main\resources\mybatis" />
-      <recent name="E:\IdeaProjects\view-home\view-user-service\src\main\java\com\lihy\view\user\mapper" />
-      <recent name="E:\IdeaProjects\view-home\view-common\src\main\java\com\lihy\view\common\entity" />
-      <recent name="E:\IdeaProjects\view-home\view-view\src\main\java\com\lihy\view\view\controller" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\view-home\view-sleuth-elk\src\main\resources\config" />
+      <recent name="E:\IdeaProjects\view-home\view-view\src\main\resources\templates" />
+      <recent name="E:\IdeaProjects\view-home\view-view\src\main\resources\static\templates" />
+      <recent name="E:\IdeaProjects\view-home\view-user-service\src\main\resources\mybatis\extend" />
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -512,114 +516,199 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.24265842" />
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
+  <component name="RunManager" selected="Spring Boot.EurekaApplication">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="VM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="view-config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.config.application.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElkApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="view-sleuth-elk" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.elk.application.ElkApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="view-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.eureka.application.EurekaApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="view-eureka" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lihy.view.eureka.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.eureka.application.EurekaApplication" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
+      <option name="ACTIVE_PROFILES" value="server1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="view-eureka" />
-      <envs />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.eureka.application.EurekaApplication" />
+      <option name="ACTIVE_PROFILES" value="server2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="view-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.eureka.application.EurekaApplication" />
+      <option name="ACTIVE_PROFILES" value="server3" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixDashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="view-hystrix-dashboard" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.hystrixDashboard.application.HystrixDashboardApplication" />
+      <option name="URL_PATH" value="/hystrix" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixTurbineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="view-hystrix-turbine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lihy.view.turbine.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.turbine.application.HystrixTurbineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhotoServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="view-photo-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lihy.view.photo.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.photo.application.PhotoServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="view-user-service-second" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lihy.view.user.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.user.application.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.user.application.UserServiceApplication" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
       <module name="view-user-service" />
-      <envs />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.user.application.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ViewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.view.application.ViewApplication" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
       <module name="view-view" />
-      <envs />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.view.application.ViewApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+    <configuration name="ZipkinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="view-sleuth-zipkin-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.zipkin.application.ZipkinApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+    <configuration name="ZipkinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="view-sleuth-zipkin-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.zipkin.application.ZipkinApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
-      <module name="" />
-      <envs />
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="view-zuul" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lihy.view.zuul.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lihy.view.zuul.application.ZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+      <option name="VM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.UserServiceApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.ViewApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Spring Boot.EurekaApplication" />
+    <list>
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.HystrixDashboardApplication" />
+      <item itemvalue="Spring Boot.ViewApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.ZipkinApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication2" />
+      <item itemvalue="Spring Boot.EurekaApplication3" />
+      <item itemvalue="Spring Boot.ElkApplication" />
+      <item itemvalue="Spring Boot.PhotoServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication1" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication (1)" />
+      <item itemvalue="Spring Boot.HystrixTurbineApplication" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.EurekaApplication" />
+      <list>
+        <item itemvalue="Spring Boot.UserServiceApplication (1)" />
+        <item itemvalue="Spring Boot.EurekaApplication1" />
+        <item itemvalue="Spring Boot.HystrixTurbineApplication" />
+        <item itemvalue="Spring Boot.PhotoServiceApplication" />
+        <item itemvalue="Spring Boot.ZuulApplication" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\lihy\AppData\Roaming\Subversion</configuration>
@@ -655,6 +744,46 @@
       <workItem from="1536286255398" duration="4795000" />
       <workItem from="1536303419181" duration="1063000" />
       <workItem from="1536304491647" duration="142000" />
+      <workItem from="1536651924861" duration="1047000" />
+      <workItem from="1536742208247" duration="619000" />
+      <workItem from="1536894914866" duration="1875000" />
+      <workItem from="1537238394990" duration="1671000" />
+      <workItem from="1537337281913" duration="634000" />
+      <workItem from="1537510204254" duration="856000" />
+      <workItem from="1537511075401" duration="1659000" />
+      <workItem from="1537838742974" duration="10677000" />
+      <workItem from="1537926772204" duration="3586000" />
+      <workItem from="1538015112541" duration="2159000" />
+      <workItem from="1538099026220" duration="7433000" />
+      <workItem from="1538185122359" duration="9864000" />
+      <workItem from="1538214249301" duration="901000" />
+      <workItem from="1539048336965" duration="5238000" />
+      <workItem from="1539071327462" duration="5335000" />
+      <workItem from="1539135056195" duration="9427000" />
+      <workItem from="1539220672879" duration="21447000" />
+      <workItem from="1539308385820" duration="21092000" />
+      <workItem from="1539569995091" duration="363000" />
+      <workItem from="1539570934905" duration="201000" />
+      <workItem from="1539571301925" duration="4940000" />
+      <workItem from="1539654752621" duration="16287000" />
+      <workItem from="1539682372898" duration="609000" />
+      <workItem from="1539683158978" duration="880000" />
+      <workItem from="1539739027194" duration="22817000" />
+      <workItem from="1539825960431" duration="9663000" />
+      <workItem from="1539840871649" duration="5681000" />
+      <workItem from="1539846592063" duration="9014000" />
+      <workItem from="1539911261665" duration="3301000" />
+      <workItem from="1539917738747" duration="4773000" />
+      <workItem from="1539932391324" duration="83000" />
+      <workItem from="1539932483446" duration="38000" />
+      <workItem from="1539932528050" duration="143000" />
+      <workItem from="1539932688295" duration="7691000" />
+      <workItem from="1540259022624" duration="8418000" />
+      <workItem from="1540281362292" duration="180000" />
+      <workItem from="1540281650749" duration="3320000" />
+      <workItem from="1540286293778" duration="2493000" />
+      <workItem from="1540344242477" duration="2450000" />
+      <workItem from="1540346858536" duration="987000" />
     </task>
     <task id="LOCAL-00001" summary="用户注册sql重写">
       <created>1536054689240</created>
@@ -684,11 +813,302 @@
       <option name="project" value="LOCAL" />
       <updated>1536304225474</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="增加单元测试">
+      <created>1537862293769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537862293769</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.spring ioc的模仿&#10;2.jave的测试">
+      <created>1538210344899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538210344899</updated>
+    </task>
+    <task id="LOCAL-00007" summary="spring ioc的模仿的一些注释">
+      <created>1538213525574</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1538213525574</updated>
+    </task>
+    <task id="LOCAL-00008" summary="spring ioc的模仿的结构的更改">
+      <created>1538213906171</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1538213906171</updated>
+    </task>
+    <task id="LOCAL-00009" summary="spring ioc的模仿的结构的更改">
+      <created>1538214274531</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538214274531</updated>
+    </task>
+    <task id="LOCAL-00010" summary="spring ioc的模仿的一些注释">
+      <created>1538214925369</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1538214925369</updated>
+    </task>
+    <task id="LOCAL-00011" summary="eureka注册中心增加用户登录">
+      <created>1539073384604</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539073384604</updated>
+    </task>
+    <task id="LOCAL-00012" summary="spring cloud config统一管理微服务配置">
+      <created>1539243172796</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1539243172796</updated>
+    </task>
+    <task id="LOCAL-00013" summary="spring cloud bus自动刷新配置">
+      <created>1539252058930</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1539252058930</updated>
+    </task>
+    <task id="LOCAL-00014" summary="spring cloud bus自动刷新配置">
+      <created>1539315172679</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1539315172679</updated>
+    </task>
+    <task id="LOCAL-00015" summary="spring cloud bus自动刷新配置">
+      <created>1539325477388</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1539325477388</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1.增加web模块内容&#10;2.web入口调用微服务">
+      <created>1539338477771</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1539338477771</updated>
+    </task>
+    <task id="LOCAL-00017" summary="增加服务链路追踪">
+      <created>1539677649173</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1539677649174</updated>
+    </task>
+    <task id="LOCAL-00018" summary="1.增加网关&#10;2.Hystrix Dashboard可视化监控">
+      <created>1539683710889</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1539683710889</updated>
+    </task>
+    <task id="LOCAL-00019" summary="1.增加网关&#10;2.Hystrix Dashboard可视化监控">
+      <created>1539683756025</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1539683756025</updated>
+    </task>
+    <task id="LOCAL-00020" summary="1.增加网关&#10;2.Hystrix Dashboard可视化监控">
+      <created>1539683789375</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1539683789375</updated>
+    </task>
+    <task id="LOCAL-00021" summary="config server增加访问认证">
+      <created>1539741047941</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1539741047941</updated>
+    </task>
+    <task id="LOCAL-00022" summary="zuul网关路由">
+      <created>1539757359590</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1539757359590</updated>
+    </task>
+    <task id="LOCAL-00023" summary="readme">
+      <created>1539758918059</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1539758918059</updated>
+    </task>
+    <task id="LOCAL-00024" summary="服务photo-service调用user-service的服务">
+      <created>1539768165821</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539768165821</updated>
+    </task>
+    <task id="LOCAL-00025" summary="增加第二个user服务，测试负载均衡">
+      <created>1539833252542</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1539833252542</updated>
+    </task>
+    <task id="LOCAL-00026" summary="turbine聚合监控">
+      <created>1539846432476</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1539846432476</updated>
+    </task>
+    <task id="LOCAL-00027" summary="turbine聚合监控">
+      <created>1539846463168</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1539846463168</updated>
+    </task>
+    <task id="LOCAL-00028" summary="增加eureka server的高可用模块">
+      <created>1539851706776</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1539851706776</updated>
+    </task>
+    <task id="LOCAL-00029" summary="turbine聚合监控">
+      <created>1539852154159</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1539852154159</updated>
+    </task>
+    <task id="LOCAL-00030" summary="turbine聚合监控">
+      <created>1539852240487</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1539852240487</updated>
+    </task>
+    <task id="LOCAL-00031" summary="增加sleuth与elk的整合模块">
+      <created>1539919781546</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1539919781547</updated>
+    </task>
+    <task id="LOCAL-00032" summary="readme更新">
+      <created>1539920063697</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1539920063697</updated>
+    </task>
+    <task id="LOCAL-00033" summary="增加sleuth与elk的整合模块">
+      <created>1539920199264</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1539920199264</updated>
+    </task>
+    <task id="LOCAL-00034" summary="项目打包jar包运行的遇到的一些坑的pom修改">
+      <created>1539937760746</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1539937760746</updated>
+    </task>
+    <task id="LOCAL-00035" summary="readme更新">
+      <created>1539939237896</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1539939237896</updated>
+    </task>
+    <task id="LOCAL-00036" summary="readme更新">
+      <created>1539939905979</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1539939905979</updated>
+    </task>
+    <task id="LOCAL-00037" summary="上传数据库文件">
+      <created>1540265920891</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1540265920891</updated>
+    </task>
+    <task id="LOCAL-00038" summary="view-hystrix-turbine的包名以及application name修改">
+      <created>1540281840526</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1540281840526</updated>
+    </task>
+    <task id="LOCAL-00039" summary="增加sleuth与elk的整合模块">
+      <created>1540287055922</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1540287055923</updated>
+    </task>
+    <task id="LOCAL-00040" summary="增加sleuth与elk的整合模块">
+      <created>1540288826064</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1540288826064</updated>
+    </task>
+    <task id="LOCAL-00041" summary="上传logstash配置文件">
+      <created>1540288960436</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1540288960436</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="JunitTest - 2018.09.25 at 15h 20m 11s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 29m 04s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 29m 33s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 34m 08s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 37m 06s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 41m 16s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 41m 54s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 49m 12s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 52m 35s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JunitTest - 2018.09.25 at 15h 54m 07s.xml">
+      <configuration name="JunitTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86898000" />
+    <option name="totallyTimeSpent" value="296750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,70 +1121,78 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48464164" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3771331" sideWeight="0.4969743" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3295082" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3295082" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" weight="0.3295082" />
+      <window_info anchor="bottom" content_ui="combo" id="Run Dashboard" order="13" weight="0.49508196" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="BPMNPalette" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="12" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27760968" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3295082" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3295082" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" weight="0.3295082" />
+      <window_info anchor="bottom" content_ui="combo" id="Run Dashboard" order="13" visible="true" weight="0.49508196" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="BPMNPalette" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -784,397 +1212,330 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="用户注册sql重写" />
-    <MESSAGE value="用户登录功能以及用户名密码加密" />
-    <MESSAGE value="系统编号生成规则" />
     <MESSAGE value="编号生成规则" />
     <MESSAGE value="去除target目录文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除target目录文件" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="6" />
-    </breakpoint-manager>
-    <watches-manager />
+    <MESSAGE value="增加单元测试" />
+    <MESSAGE value="1.spring ioc的模仿&#10;2.jave的测试" />
+    <MESSAGE value="spring ioc的模仿的结构的更改" />
+    <MESSAGE value="spring ioc的模仿的一些注释" />
+    <MESSAGE value="eureka注册中心增加用户登录" />
+    <MESSAGE value="spring cloud config统一管理微服务配置" />
+    <MESSAGE value="spring cloud bus自动刷新配置" />
+    <MESSAGE value="1.增加web模块内容&#10;2.web入口调用微服务" />
+    <MESSAGE value="增加服务链路追踪" />
+    <MESSAGE value="1.增加网关&#10;2.Hystrix Dashboard可视化监控" />
+    <MESSAGE value="config server增加访问认证" />
+    <MESSAGE value="zuul网关路由" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="服务photo-service调用user-service的服务" />
+    <MESSAGE value="增加第二个user服务，测试负载均衡" />
+    <MESSAGE value="增加eureka server的高可用模块" />
+    <MESSAGE value="turbine聚合监控" />
+    <MESSAGE value="项目打包jar包运行的遇到的一些坑的pom修改" />
+    <MESSAGE value="readme更新" />
+    <MESSAGE value="上传数据库文件" />
+    <MESSAGE value="view-hystrix-turbine的包名以及application name修改" />
+    <MESSAGE value="增加sleuth与elk的整合模块" />
+    <MESSAGE value="上传logstash配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传logstash配置文件" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/view-view/src/main/resources/application.yml">
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-starter-zipkin/1.1.3.RELEASE/spring-cloud-starter-zipkin-1.1.3.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-hystrix-turbine/src/main/java/com/lihy/view/turbine/application/HystrixTurbineApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="280">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/PhotoController.java">
+    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/logback-spring.xml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.8.RELEASE/spring-boot-1.5.8.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state relative-caret-position="1810">
+          <caret line="576" column="16" selection-start-line="576" selection-start-column="16" selection-end-line="576" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/UserController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.8.RELEASE/spring-boot-1.5.8.RELEASE.jar!/org/springframework/boot/builder/SpringApplicationBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        <state relative-caret-position="90">
+          <caret line="158" column="31" selection-start-line="158" selection-start-column="25" selection-end-line="158" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/view-eureka-cluster/src/main/java/com/lihy/view/eureka/application/EurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/controller/TestController.java">
+    <entry file="file://$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApiHystrixFallbackFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-view/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="21" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-video-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-photo-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/org/apache/commons/lang/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-core/1.2.6.RELEASE/spring-cloud-netflix-core-1.2.6.RELEASE.jar!/org/springframework/cloud/netflix/feign/FeignClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-starter/1.3.2/mybatis-spring-boot-starter-1.3.2.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-780">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/service/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/view-view/src/main/java/com/lihy/view/view/application/ViewApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/dto/UserDto.java" />
-    <entry file="file://$PROJECT_DIR$/view-eureka/src/banner.md" />
-    <entry file="file://$PROJECT_DIR$/view-eureka/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/BaseResponseMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/annotation/MapperScan.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="65" column="47" lean-forward="true" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/RegisterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/ResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="79">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApiHystrixFallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="67">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <marker date="1536225823214" expanded="true" signature="1220:1316" ph="SELECT * FRO... t_user" />
-            <marker date="1536225823214" expanded="true" signature="1480:1605" ph="SELECT * FRO... t_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/constant/SystemConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/GuidUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/security/MessageDigest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1670">
-          <caret line="162" column="60" lean-forward="false" selection-start-line="162" selection-start-column="51" selection-end-line="162" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/util/PasswordEncryptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-eureka/src/main/java/com/lihy/view/eureka/application/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/view-user-service/view-user-service.iml" />
     <entry file="file://$PROJECT_DIR$/view-user-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="78" column="12" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="78" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-eureka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="620">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#2338#2339#0" expanded="false" />
-            <element signature="e#2365#2366#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/application/UserServiceApplication.java">
+    <entry file="file://$PROJECT_DIR$/view-api/src/main/java/com/lihy/view/api/feign/UserApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/view-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="53" column="63" lean-forward="false" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
+        <state relative-caret-position="200">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-view/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="58" column="21" selection-start-line="49" selection-start-column="8" selection-end-line="58" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1539679393953" expanded="true" signature="2106:2140" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/SysBillRuleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/view-photo-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="72" lean-forward="false" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+        <state relative-caret-position="1300">
+          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
           <folding>
-            <marker date="1536300491317" expanded="true" signature="4681:4792" ph="select from t_sys_bill_rule" />
-            <marker date="1536300491317" expanded="true" signature="4878:4943" ph="delete from " />
-            <marker date="1536300491317" expanded="true" signature="5056:5083" ph="delete from " />
-            <marker date="1536300491317" expanded="true" signature="5273:6107" ph="insert into t_sys_bill_rule... " />
-            <marker date="1536300491317" expanded="true" signature="9174:9210" ph="select count... t_sys_bill_rule" />
-            <marker date="1536300491317" expanded="true" signature="11542:12527" ph="update t_sys... " />
-            <marker date="1536300491317" expanded="true" signature="12748:14456" ph="update t_sys... " />
-            <marker date="1536300491317" expanded="true" signature="14565:15434" ph="update t_sys... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/SysBillRuleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="67" lean-forward="false" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/src/main/java/com/lihy/view/common/entity/SysBillRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/mapper/SysBillRuleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/mybatis/extend/SysBillRuleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="38" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <marker date="1536301791345" expanded="true" signature="855:914" ph="SELECT * FRO... T_SYS_BILL_RULE" />
+            <marker date="1539843269605" expanded="true" signature="2100:2134" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="86" column="27" lean-forward="false" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="280">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-common/pom.xml">
+    <entry file="file://$PROJECT_DIR$/logs/spring-cloud-logging.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-3222" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-3411" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-sleuth-elk/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-sleuth-elk/src/main/java/com/lihy/view/elk/application/ElkApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="322" column="49" selection-start-line="322" selection-start-column="49" selection-end-line="322" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/test/JunitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/db/view.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/view-sleuth-elk.json" />
+    <entry file="file://$PROJECT_DIR$/view-sleuth-elk/src/main/java/com/lihy/view/elk/controller/ElkController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-config-server/src/main/java/com/lihy/view/config/application/ConfigServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-eureka/src/main/java/com/lihy/view/eureka/application/EurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-eureka-cluster/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-sleuth-elk/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/service/impl/SysBillRuleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="220">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-eureka-cluster/src/main/resources/application-server3.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-eureka-cluster/src/main/resources/application-server2.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-eureka-cluster/src/main/resources/application-server1.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-config-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-hystrix-dashboard/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-hystrix-turbine/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-hystrix-turbine/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-sleuth-zipkin-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-sleuth-elk/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/java/com/lihy/view/user/application/UserServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-zuul/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-user-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-user-service-second/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-photo-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-video-service/src/main/resource/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view-view/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="260">
+            <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
@@ -1184,10 +1545,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>view-view:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.42068964" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

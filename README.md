@@ -1,21 +1,23 @@
 # springcloud各个部分的基础配置复习
 
 ### 模块说明
-1、view-eureka：eureka服务注册中心<br>
-2、view-eureka-cluster：eureka server的高可用<br>
-3、view-config-server：配置中心server，配置中心在[view-home-config](https://github.com/huanyingtoyou/view-home-config)<br>
-4、view-hystrix-dashboard：Hystrix Dashboard可视化监控<br>
-5、view-hystrix-turbine：Hystrix Turbine可视化集群监控<br>
-6、view-sleuth-zipkin-server：服务链路跟踪<br>
-7、view-zuul：网关路由（zuul组件包含ribbon，可以实现负载均衡），可以通过zuul过滤器过滤请求<br>
-8、view-api：feign接口<br>
-9、view-common：实体类、工具类等<br>
-10、view-user-service：测试的用户服务（有几个测试服务）<br>
-11、view-user-service-second：复制的上面的user-service服务，为了测试负载均衡<br>
-12、view-photo-service：测试的照片服务（待开发）<br>
-13、view-video-service：测试的视频服务（待开发）<br>
-14、view-view：web<br>
-15、view-sleuth-elk：sleuth与elasticsearch、logstash、kibana的整合
+|序号|模块|端口|注释|注意
+|:---:|:---:|:---:|:---:|:---:|
+|1|view-eureka|8088|eureka服务注册中心|账号为lihy，密码为520，可修改|
+|2|view-eureka-cluster|8088/8089/8090|eureka server的高可用|启动时依次修改application.yml中的spring.profiles.active的值server1为server2和server3|
+|3|view-config-server|8888|配置中心server，配置中心在[view-home-config](https://github.com/huanyingtoyou/view-home-config)|例子中需安装rabbitmq，配置修改后自动刷新用到了mq|
+|4|view-hystrix-dashboard|8010|Hystrix Dashboard可视化监控||
+|5|view-hystrix-turbine|8011|Hystrix Turbine可视化集群监控||
+|6|view-sleuth-zipkin-server|8000|服务链路跟踪，可以监控服务的运行情况||
+|7|view-sleuth-elk|8999|sleuth与elasticsearch、logstash、kibana的整合|例子中elk服务都在本机上，只需新建logstash的.conf文件用于处理logstash的日志输入和输出，输入为本模块生成的json日志文件，输出到elasticsearch|
+|8|view-zuul|8020|网关路由（zuul组件包含ribbon，可以实现负载均衡），可以通过zuul过滤器过滤请求||
+|9|view-api|无|feign接口||
+|10|view-common|无|实体类、工具类等||
+|11|view-user-service|8081|测试的用户服务（有注册、登录和获取信息几个测试服务）||
+|12|view-user-service-second|8083|复制的user-service服务，为了测试负载均衡||
+|13|view-photo-service|8082|测试的照片服务（待开发）||
+|14|view-video-service|暂无|测试的视频服务（待开发）||
+|15|view-view|web|8080||
 
 ### 使用说明
 1、相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。<br>
