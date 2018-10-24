@@ -25,10 +25,11 @@
 1、相继启动view-eureka、view-config-server、view-sleuth-zipkin-server等服务后，可以进行相应的测试。<br>
 2、view-eureka的账号为lihy，密码为520，可修改；<br>
 3、view-eureka-cluster启动时首先按照下图所示指定每个application启动的实例<br>
-![avatar][base64str]<br>
+<!--![avatar][base64str]<br>-->
+![image](https://github.com/huanyingtoyou/view-home/blob/master/view-eureka-cluster%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87.png?raw=true)<br>
 EurekaClusterApplication1的active Profiles为server1，EurekaClusterApplication2的active Profiles为server2，EurekaClusterApplication3的active Profiles为server3，启动时要注意修改application.yml文件的spring.profiles.active的值依次为server1、server2、server3<br>
 4、view-user-service下有数据库文件，可以执行，数据库名字这里为view，可以修改；<br>
-5、view-zuul-file-upload测试时，启动view-eureka、view-config-server和view-zuul-file-upload，curl命令curl curl -v -H "Transer-Encoding:chunked" -F "file=@文件路径" localhost:8020/view-zuul/upload或者postman访问http://localhost:8020/view-zuul/upload，如果上传文件过大，报异常，访问地址添加zuul前缀，如http://localhost:8020/zuul/view-zuul/upload；上传大文件还可能出现hystrix的超时异常，这时将hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds的值和ribbon.ConnectTimeout的值以及ribbon.ReadTimeout的值设置大一点。<br>
+5、view-zuul-file-upload测试时，启动view-eureka、view-config-server和view-zuul-file-upload，curl命令curl curl -v -H "Transer-Encoding:chunked" -F "file=@文件路径" localhost:8020/view-zuul/upload或者postman访问localhost:8020/view-zuul/upload，如果上传文件过大，报异常，访问地址添加zuul前缀，如localhost:8020/zuul/view-zuul/upload；上传大文件还可能出现hystrix的超时异常，这时将hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds的值和ribbon.ConnectTimeout的值以及ribbon.ReadTimeout的值设置大一点。<br>
 6、view-sleuth-elk模块下有logstash.conf文件，是本次测试所用的logstash文件，可以直接复制放到安装的logstash的config目录下或者其他地方
 
 ### 注意
