@@ -22,8 +22,9 @@ public class OrderController {
     public ResponseResult<Void> insertOrder(@RequestBody Order order) {
         return orderService.insertOrder(order);
     }
+
     @GetMapping("/selectOrderByUserId")
-    public ResponseResult<List<Order>> selectOrderByUserId(Integer userId) {
+    public ResponseResult<List<Order>> selectOrderByUserId(@RequestParam Integer userId) {
         return orderService.selectOrderByUserId(userId);
     }
 }

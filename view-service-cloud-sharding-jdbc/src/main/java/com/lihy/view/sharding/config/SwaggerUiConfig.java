@@ -30,8 +30,8 @@ public class SwaggerUiConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("用户微服务")
-                .description("用户微服务api文档接口")
+                .title("测试sharding-jdbc")
+                .description("测试sharding-jdbc微服务api文档接口")
                 .contact(new Contact("lihy", "#", "1833392918@qq.com"))
                 .version("1.0")
                 .build();
