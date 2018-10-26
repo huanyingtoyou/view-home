@@ -7,19 +7,21 @@
 |view-eureka|8088|eureka服务注册中心|账号为lihy，密码为520，可修改|
 |view-eureka-cluster|8088/8089/8090|eureka server的高可用|启动时依次修改application.yml中的spring.profiles.active的值server1为server2和server3|
 |view-config-server|8888|配置中心server，配置中心在[view-home-config](https://github.com/huanyingtoyou/view-home-config)|例子中需安装rabbitmq，配置修改后自动刷新用到了mq|
-|view-hystrix-dashboard|8010|Hystrix Dashboard可视化监控||
+|view-hystrix-dashboard|8010|Hystrix Dashboard可视化监控|暂无|
 |view-hystrix-turbine|8011|Hystrix Turbine可视化集群监控|要启动view-hystrix-dashboard服务，打开dashboard首页后输入http://ip:port/turbine.stream|
-|view-sleuth-zipkin-server|8000|服务链路跟踪，可以监控服务的运行情况||
+|view-sleuth-zipkin-server|8000|服务链路跟踪，可以监控服务的运行情况|暂无|
 |view-sleuth-elk|8999|sleuth与elasticsearch、logstash、kibana的整合|例子中elk服务都在本机上，只需新建logstash的.conf文件用于处理logstash的日志输入和输出，输入为本模块生成的json日志文件，输出到elasticsearch|
-|view-zuul|8020|网关路由（zuul组件包含ribbon，可以实现负载均衡），可以通过zuul过滤器过滤请求||
+|view-zuul|8020|网关路由（zuul组件包含ribbon，可以实现负载均衡），可以通过zuul过滤器过滤请求|暂无|
 |view-zuul-file-upload|8021|测试通过zuul上传文件|测试时可以使用postman或者curl命令|
-|view-api|无|feign接口||
-|view-common|无|实体类、工具类等||
+|view-api|无|feign接口|暂无|
+|view-common|无|实体类、工具类等|暂无|
 |view-user-service|8081|测试的用户服务（有注册、登录和获取信息几个测试服务）|数据库为mysql，附有数据库文件|
-|view-user-service-second|8083|复制的user-service服务，为了测试负载均衡||
-|view-photo-service|8082|测试的照片服务（待开发）||
-|view-video-service|暂无|测试的视频服务（待开发）||
-|view-service-cloud-sharding-jdbc|8084|SpringCloud下sharding-jdbc分库分表||
+|view-user-service-second|8083|复制的user-service服务，为了测试负载均衡|暂无|
+|view-photo-service|8082|测试的照片服务（待开发）|暂无|
+|view-video-service|暂无|测试的视频服务（待开发）|暂无|
+|view-service-cloud-sharding-jdbc|8084|SpringCloud下sharding-jdbc分库分表|暂无|
+|view-service-java-sharding-jdbc|8085|java版sharding-jdbc分库分表|暂无|
+|view-service-java-yml-sharding-jdbc|8086|java获取yml配置文件sharding-jdbc分库分表|暂无|
 |view-view|8080|web|网站入口|
 
 ### 使用说明

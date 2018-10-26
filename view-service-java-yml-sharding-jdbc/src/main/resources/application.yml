@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    ds-0:
+      hikari:
+        jdbc-url: jdbc:mysql://localhost:3306/ds_0
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password:
+        minimum-idle: 10
+        maximum-pool-size: 200
+        pool-name: DS0HikariCP
+        connection-timeout: 30000
+        connection-test-query: select 1
+        max-lifetime: 600000
+        idle-timeout: 120000
+        data-source-properties: {cachePrepStmts: true, prepStmtCacheSize: 250, prepStmtCacheSqlLimit: 2048, useServerPrepStmts: true}
+    ds-1:
+      hikari:
+        jdbc-url: jdbc:mysql://localhost:3306/ds_1
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password:
+        minimum-idle: 10
+        maximum-pool-size: 200
+        pool-name: DS1HikariCP
+        connection-timeout: 30000
+        connection-test-query: select 1
+        max-lifetime: 600000
+        idle-timeout: 120000
+        data-source-properties: {cachePrepStmts: true, prepStmtCacheSize: 250, prepStmtCacheSqlLimit: 2048, useServerPrepStmts: true}

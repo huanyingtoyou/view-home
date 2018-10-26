@@ -1,0 +1,16 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: view--service-java-yml-sharding-jdbc
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://lihy:520@localhost:8088/eureka/
+      #集群模式
+      #defaultZone: http://lihy:520@eureka1:8088/eureka/,http://lihy:520@eureka2:8089/eureka/,http://lihy:520@eureka3:8090/eureka/
+  instance:
+    status-page-url: http://localhost:${server.port}/swagger-ui.html
+# mybatis mapper xml 配置 -- 本例为java示例，不使用下面的mybatis设置
+#mybatis:
+  #mapper-locations: classpath:mybatis/**/*.xml
