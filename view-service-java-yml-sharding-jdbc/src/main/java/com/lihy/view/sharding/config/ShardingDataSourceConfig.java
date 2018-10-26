@@ -25,20 +25,21 @@ import java.util.concurrent.ConcurrentHashMap;
 @Configuration
 public class ShardingDataSourceConfig {
     @ConfigurationProperties(prefix = "spring.datasource.ds-0.hikari")
-    @Bean(name = "ds_0")
+    //@Bean(name = "ds_0")
     public DataSource dataSource0() {
         return new HikariDataSource();
     }
 
     @ConfigurationProperties(prefix = "spring.datasource.ds-1.hikari")
-    @Bean(name = "ds_1")
+    //@Bean(name = "ds_1")
     public DataSource dataSource1() {
         return new HikariDataSource();
     }
 
     @Primary
     @Bean(name = "shardingDataSource")
-    public DataSource getDataSource(@Qualifier("ds_0") DataSource ds_0, @Qualifier("ds_1") DataSource ds_1) throws SQLException {
+    //public DataSource getDataSource(@Qualifier("ds_0") DataSource ds_0, @Qualifier("ds_1") DataSource ds_1) throws SQLException {
+    public DataSource getDataSource() throws SQLException {
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
         shardingRuleConfig.getTableRuleConfigs().add(getOrderTableRuleConfiguration());
         shardingRuleConfig.getTableRuleConfigs().add(getOrderItemTableRuleConfiguration());
@@ -46,10 +47,10 @@ public class ShardingDataSourceConfig {
         shardingRuleConfig.setDefaultDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", new DatabaseShardingAlgorithm()));
         shardingRuleConfig.setDefaultTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("order_id", new TablePreciseShardingAlgorithm(), new TableRangeShardingAlgorithm()));
         Map<String, DataSource> dataSourceMap = new HashMap<>();
-        dataSourceMap.put("ds_0", ds_0);
-        dataSourceMap.put("ds_1", ds_1);
+        dataSourceMap.put("ds_0", dataSource0());
+        dataSourceMap.put("ds_1", dataSource1());
         Properties properties = new Properties();
-//        properties.setProperty("sql.show", Boolean.TRUE.toString());
+        //properties.setProperty("sql.show", Boolean.TRUE.toString());
         return ShardingDataSourceFactory.createDataSource(dataSourceMap, shardingRuleConfig, new ConcurrentHashMap<>(), properties);
     }
 
