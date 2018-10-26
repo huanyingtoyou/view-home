@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50637
 File Encoding         : 65001
 
-Date: 2018-10-23 11:35:32
+Date: 2018-10-26 10:19:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -43,28 +43,27 @@ CREATE TABLE `t_sys_bill_rule` (
 -- ----------------------------
 -- Records of t_sys_bill_rule
 -- ----------------------------
-INSERT INTO `t_sys_bill_rule` VALUES ('004988ef03ec4618bbb01d38ee41a15e', 'USER_ID', '用户id', 'U', null, '1', null, '', '8', null, null, '', 'admin', '2018-01-22 09:47:27', '1539942334292', '2018-10-19 17:45:34', '0');
+INSERT INTO `t_sys_bill_rule` VALUES ('004988ef03ec4618bbb01d38ee41a15e', 'USER_ID', '用户id', 'U', null, '0', null, '', '8', null, null, '', 'admin', '2018-01-22 09:47:27', '1539942334292', '2018-10-19 17:45:34', '0');
 
 -- ----------------------------
 -- Table structure for t_user
 -- ----------------------------
 DROP TABLE IF EXISTS `t_user`;
 CREATE TABLE `t_user` (
-  `USER_ID` varchar(32) CHARACTER SET utf8 NOT NULL,
-  `USERNAME` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
-  `PASSWORD` varchar(64) CHARACTER SET utf8 DEFAULT NULL,
-  `EMAIL` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
-  `ADDRESS` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
-  `BIRTH_DATE` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `USER_ID` varchar(32) NOT NULL,
+  `USERNAME` varchar(32) DEFAULT NULL,
+  `PASSWORD` varchar(64) DEFAULT NULL,
+  `EMAIL` varchar(32) DEFAULT NULL,
+  `ADDRESS` varchar(255) DEFAULT NULL,
+  `BIRTH_DATE` datetime DEFAULT NULL,
   `CREATE_DATE` datetime DEFAULT NULL,
-  `CREATE_PERSON` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
+  `CREATE_PERSON` varchar(32) DEFAULT NULL,
   `UPDATE_DATE` datetime DEFAULT NULL,
-  `UPDATE_PERSON` varchar(32) CHARACTER SET utf8 DEFAULT NULL,
+  `UPDATE_PERSON` varchar(32) DEFAULT NULL,
   `SALT` varchar(50) DEFAULT NULL COMMENT '加密盐',
   PRIMARY KEY (`USER_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('U00000001', 'lihy', 'df!!#6#Fdb5d0563d34@355gcd5!42!1!!33552@bf#2@faf#F0ab0b53d#3#6d6', null, null, null, null, null, null, null, 'e8c1caea-6cfc-4d80-b64f-0cda4e33ea00');

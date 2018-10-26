@@ -1,0 +1,10 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: view--service-sharding-jdbc
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://lihy:123456@localhost:8888/

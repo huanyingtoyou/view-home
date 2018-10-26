@@ -1,10 +1,10 @@
-package com.lihy.view.user.test;
+package com.lihy.view.sharding.test;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lihy.view.common.entity.User;
+import com.lihy.view.common.entity.Order;
 import com.lihy.view.common.util.ResponseResult;
-import com.lihy.view.user.application.UserServiceSecondApplication;
-import com.lihy.view.user.service.UserService;
+import com.lihy.view.sharding.application.ShardingServiceCloudApplication;
+import com.lihy.view.sharding.service.OrderService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.List;
+
 /**
  * 用于user服务的单元测试
  * @author lihy
@@ -20,11 +22,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 //@RunWith(value = Parameterized.class)
 @RunWith(value = SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = UserServiceSecondApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = ShardingServiceCloudApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class JunitTest {
 
     @Autowired
-    private UserService userService;
+    private OrderService orderService;
 
     /*private String username;
     private String password;
@@ -51,25 +53,19 @@ public class JunitTest {
 
     @Test
     public void test() throws Exception {
-        this.doRegister();
+        this.insertOrder();
     }
 
-    public void getUserInfoByUserId() {
-        ResponseResult<User> responseResult = userService.getUserInfoByUserId("6");
+    public void selectOrderByUserId() {
+        ResponseResult<List<Order>> responseResult = orderService.selectOrderByUserId(6);
         System.out.println(JSONObject.toJSONString(responseResult.getData()));
     }
 
-    public void doRegister() {
-        User user = new User();
-        user.setUsername("哟用户");
-        user.setPassword("67890");
-        userService.doRegister(user);
-    }
-
-    public void doLogin() {
-        User user = new User();
-        user.setUsername("测试名");
-        user.setPassword("123456");
-        userService.doLogin(user);
+    public void insertOrder() {
+        Order order = new Order();
+        order.setOrderId((long)1);
+        order.setUserId(2);
+        order.setStatus("可用");
+        orderService.insertOrder(order);
     }
 }
