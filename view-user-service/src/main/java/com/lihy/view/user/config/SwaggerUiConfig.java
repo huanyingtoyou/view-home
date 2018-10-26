@@ -23,7 +23,7 @@ public class SwaggerUiConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.lihy.view.sharding.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.lihy.view.user.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
