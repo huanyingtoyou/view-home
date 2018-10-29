@@ -19,27 +19,28 @@ import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * 这个有问题
+ * 暂时不要测试
  * @author lihy
  * @date 2018/10/24
  */
 @Configuration
 public class ShardingDataSourceConfig {
     @ConfigurationProperties(prefix = "spring.datasource.ds-0.hikari")
-    //@Bean(name = "ds_0")
-    public DataSource dataSource0() {
+    @Bean(name = "ds_0")
+    public static DataSource dataSource0() {
         return new HikariDataSource();
     }
 
     @ConfigurationProperties(prefix = "spring.datasource.ds-1.hikari")
-    //@Bean(name = "ds_1")
-    public DataSource dataSource1() {
+    @Bean(name = "ds_1")
+    public static DataSource dataSource1() {
         return new HikariDataSource();
     }
 
     @Primary
     @Bean(name = "shardingDataSource")
-    //public DataSource getDataSource(@Qualifier("ds_0") DataSource ds_0, @Qualifier("ds_1") DataSource ds_1) throws SQLException {
-    public DataSource getDataSource() throws SQLException {
+    public DataSource getDataSource(@Qualifier("ds_0") DataSource ds_0, @Qualifier("ds_1") DataSource ds_1) throws SQLException {
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
         shardingRuleConfig.getTableRuleConfigs().add(getOrderTableRuleConfiguration());
         shardingRuleConfig.getTableRuleConfigs().add(getOrderItemTableRuleConfiguration());
@@ -47,8 +48,8 @@ public class ShardingDataSourceConfig {
         shardingRuleConfig.setDefaultDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", new DatabaseShardingAlgorithm()));
         shardingRuleConfig.setDefaultTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("order_id", new TablePreciseShardingAlgorithm(), new TableRangeShardingAlgorithm()));
         Map<String, DataSource> dataSourceMap = new HashMap<>();
-        dataSourceMap.put("ds_0", dataSource0());
-        dataSourceMap.put("ds_1", dataSource1());
+        dataSourceMap.put("ds_0", ds_0);
+        dataSourceMap.put("ds_1", ds_1);
         Properties properties = new Properties();
         //properties.setProperty("sql.show", Boolean.TRUE.toString());
         return ShardingDataSourceFactory.createDataSource(dataSourceMap, shardingRuleConfig, new ConcurrentHashMap<>(), properties);
