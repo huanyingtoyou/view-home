@@ -18,6 +18,7 @@
         <module>view-service-cloud-sharding-jdbc</module>
         <module>view-service-java-sharding-jdbc</module>
         <module>view-service-java-yml-sharding-jdbc</module>
+        <module>view-service-java-slave-sharding-jdbc</module>
         <module>view-video-service</module>
         <module>view-photo-service</module>
         <module>view-api</module>
@@ -27,7 +28,6 @@
         <module>view-hystrix-dashboard</module>
         <module>view-hystrix-turbine</module>
         <module>view-sleuth-elk</module>
-        <module>view-zuul-file-upload</module>
     </modules>
 
 

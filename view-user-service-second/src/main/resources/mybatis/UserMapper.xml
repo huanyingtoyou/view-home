@@ -51,16 +51,16 @@
             <if test="address != null and address != ''">
                 ADDRESS,
             </if>
-            <if test="birthDate != null and birthDate != ''">
+            <if test="birthDate != null">
                 BIRTH_DATE,
             </if>
-            <if test="createDate != null and createDate != ''">
+            <if test="createDate != null">
                 CREATE_DATE,
             </if>
             <if test="createPerson != null and createPerson != ''">
                 CREATE_PERSON,
             </if>
-            <if test="updateDate != null and updateDate != ''">
+            <if test="updateDate != null">
                 UPDATE_DATE,
             </if>
             <if test="updatePerson != null and updatePerson != ''">
@@ -86,17 +86,17 @@
             <if test="address != null and address != ''">
                 #{address,jdbcType=VARCHAR},
             </if>
-            <if test="birthDate != null and birthDate != ''">
-                #{birthDate,jdbcType=VARCHAR},
+            <if test="birthDate != null">
+                #{birthDate,jdbcType=TIMESTAMP},
             </if>
-            <if test="createDate != null and createDate != ''">
-                #{createDate,jdbcType=VARCHAR},
+            <if test="createDate != null">
+                #{createDate,jdbcType=TIMESTAMP},
             </if>
             <if test="createPerson != null and createPerson != ''">
                 #{createPerson,jdbcType=VARCHAR},
             </if>
-            <if test="updateDate != null and updateDate != ''">
-                #{updateDate,jdbcType=VARCHAR},
+            <if test="updateDate != null">
+                #{updateDate,jdbcType=TIMESTAMP},
             </if>
             <if test="updatePerson != null and updatePerson != ''">
                 #{updatePerson,jdbcType=VARCHAR},

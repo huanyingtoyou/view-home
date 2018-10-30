@@ -17,6 +17,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -72,6 +74,9 @@ public class UserServiceImpl implements UserService {
     public ResponseResult<Void> doRegister(User user) {
         LOGGER.info("-----------------用户注册start-----------------");
         ResponseResult<Void> responseResult = new ResponseResult<>();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date nowDate = new Date();
+
         String password = user.getPassword();
         String salt = UUID.randomUUID().toString();
         password = PasswordEncryptor.encryptPassword(password, salt);
@@ -82,6 +87,8 @@ public class UserServiceImpl implements UserService {
         String userId = result.getData();
         user.setUserId(userId);
         user.setPassword(password);
+        user.setCreateDate(nowDate);
+        user.setUpdateDate(nowDate);
         user.setSalt(salt);
         int isInsert = userMapper.doRegister(user);
         if (isInsert > 0) {

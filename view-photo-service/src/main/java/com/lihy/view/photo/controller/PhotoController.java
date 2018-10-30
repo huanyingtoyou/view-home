@@ -6,10 +6,12 @@ import com.lihy.view.common.util.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.util.FileCopyUtils;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * @author lihy
@@ -34,5 +36,11 @@ public class PhotoController {
         return this.profile;
     }
 
-
+    @PostMapping("/upload")
+    public String fileUpload(@RequestParam MultipartFile file) throws IOException {
+        byte[] bytes = file.getBytes();
+        File fileToSave = new File(file.getOriginalFilename());
+        FileCopyUtils.copy(bytes, fileToSave);
+        return fileToSave.getAbsolutePath();
+    }
 }
