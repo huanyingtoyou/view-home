@@ -2,9 +2,10 @@ server:
   port: 8082
 spring:
   application:
-    name: view-photo-service, datasource
+    name: view-photo-service
   cloud:
     config:
       label: master
       profile: dev
       uri: http://lihy:123456@localhost:8888/
+      name: view-photo-service, datasource

@@ -2,9 +2,10 @@ server:
   port: 8083
 spring:
   application:
-    name: view-user-service, datasource
+    name: view-user-service
   cloud:
     config:
       label: master
       profile: dev
       uri: http://lihy:123456@localhost:8888/
+      name: view-user-service, datasource

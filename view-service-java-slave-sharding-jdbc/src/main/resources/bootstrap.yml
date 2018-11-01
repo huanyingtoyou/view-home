@@ -2,7 +2,7 @@ server:
   port: 8085
 spring:
   application:
-    name: view--service-java-sharding-jdbc
+    name: view-service-java-sharding-jdbc
 eureka:
   client:
     serviceUrl:
