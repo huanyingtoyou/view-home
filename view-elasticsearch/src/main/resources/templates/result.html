@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>搜索结果</title>
+    <link type="text/css" rel="stylesheet" href="/css/result.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/baiduPage.css"/>
+</head>
+<body>
+
+<div class="result_search">
+    <div class="logo">
+        <a href="/index">新闻搜索</a>
+    </div>
+    <div class="search_box">
+        <form class="resultForm" action="/search" method="post">
+            <input id="keyword" type="text" name="keyword" th:value="${keyword}"/>
+            <input hidden="hidden" id="pageSize" type="text" name="pageSize"/>
+            <input hidden="hidden" id="pageNum" type="text" name="pageNum" th:value="${pageNum}"/>
+            <input type="submit" value="搜索一下"/>
+        </form>
+    </div>
+</div>
+
+<p class="result_info">共搜索到<span id="totalHits" th:utext="${totalHits}">结果集总条数</span>条结果,耗时<span th:utext="${totalTime}"></span>秒
+</p>
+<div class="newsList">
+    <tr th:each="news,newsStat : ${newsList}">
+        <div class="news">
+            <a href="#" th:href="@{${news.url}}" target="_blank"><div class="news_title" th:utext="${news.title}">新闻标题</div></a>
+            <p>
+            <th th:utext="${news.content}">新闻内容</th>
+            </p>
+        </div>
+
+    </tr>
+</div>
+<div class="page">
+    <div id="page">
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="/js/baiduPage.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var totalHits = $("#totalHits").text();
+        var currentPage = $("#pageNum").val();
+        if (null == currentPage || "" == currentPage || undefined == currentPage) {
+            currentPage = 1;
+        }
+        var pageSize = 10;
+        var page = $(".page").baiduPage({
+            pageSize: pageSize,
+            count: totalHits,
+            current: currentPage,
+            /*updateSelf: false,*/
+            callback: function (selected) {
+                $("#pageNum").val(selected);
+                $(".resultForm").submit();
+                //window.location.reload();
+                //var keyword = $("#keyword").val();
+
+                /*$.ajax({
+                    url:"/search",
+                    type:'post',
+                    dataType:'json',
+                    contentType: 'application/json',
+                    data : {
+                        "keyword" : keyword,
+                        "pageNum" : selected,
+                    },
+                    success:function(data){
+                        window.location.reload();
+                    },
+                    error:function(data){
+                        alert("系统错误!");
+                    }
+                });*/
+            }
+        });
+        <!-- 标题栏随滚动条自动下滑开始 -->
+        var elm = $(".result_search");
+        var ett= $(".result_info");
+        var startPos = $(elm).offset().top;
+        $.event.add(window, "scroll", function() {
+            var p = $(window).scrollTop();
+            $(elm).css('position',((p) > startPos) ? 'fixed' : 'static');
+            $(elm).css('top',((p) > startPos) ? '0px' : '');
+            $(elm).css('box-shadow',((p) > startPos) ? '0 0 5px #888' : '');
+            $(ett).css('margin-top',((p) > startPos) ? '50px' : '');
+        });
+        <!-- 标题栏随滚动条自动下滑结束 -->
+    });
+</script>
+</html>

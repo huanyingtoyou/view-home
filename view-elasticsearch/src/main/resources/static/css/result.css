@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.result_search {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ece1e1;
+}
+
+.logo {
+    float: left;
+}
+
+.logo {
+    color: #008040;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 0px 0px 20px;
+}
+
+.logo a:link,.logo a:visited{
+    text-decoration: none;
+    /*color: #008040;*/
+    color: #3385ff;
+}
+
+.search_box {
+    float: left;
+    /*border: 1px solid #008040;*/
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 585px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.search_box input[type="text"] {
+    width: 85%;
+    height: 28px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    padding: 0px 5px 0px 5px;
+}
+
+.search_box input[type="submit"] {
+    width: 13%;
+    border: 0;
+    outline: none;
+    height: 30px;
+    /*background-color: #008040;*/
+    background-color: #3385ff;
+    color: #ffffff;
+    float: right;
+}
+
+.result_info {
+    margin-left: 30px;
+    padding-left: 116px;
+    color: #999;
+    font-size: 12px;
+}
+
+.result_info span {
+    color: #ff0000;
+}
+
+.newsList {
+    width: 540px;
+    padding-left: 116px;
+}
+
+.newsList h4 {
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.newsList h4 a:link, .newsList h4 a:visited {
+    text-decoration: none;
+}
+
+.newsList h4 a:hover {
+    text-decoration: underline;
+}
+
+.newsList p {
+    margin-left: 30px;
+    line-height: 1.54;
+    font-size: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.page {
+    padding: 0 0 0 100px;
+    margin: 30px 0 40px;
+}
+.news_title {
+    padding-left: 29px;
+}
+/*
+.page {
+    margin-left: 50px;
+    height: 30px;
+}
+
+.page ul li {
+    list-style: none;
+    float: left;
+    width: 50px;
+}
+
+.page ul li a:link, .page ul li a:visited {
+    text-decoration: none;
+}
+
+.info {
+    width: 800px;
+
+}
+
+.info p {
+    text-align: center;
+    font-size: 12px;
+    color: #808080;
+}*/

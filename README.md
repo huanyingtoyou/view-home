@@ -3,7 +3,8 @@
 ### 模块说明
 
 |模块|端口|注释|注意
-|:--------:|:---:|:-------------:|:-------------:|
+|:------:|:--:|:-----------:|:-----------:|
+|view-elasticsearch|8089|elasticsearch全文检索|测试时先导入数据库|
 |view-eureka|8088|eureka服务注册中心|账号为lihy，密码为520，可修改|
 |view-eureka-cluster|8088/8089/8090|eureka server的高可用|启动时依次修改application.yml中的spring.profiles.active的值server1为server2和server3|
 |view-config-server|8888|配置中心server，配置中心在[view-home-config](https://github.com/huanyingtoyou/view-home-config)|例子中需安装rabbitmq，配置修改后自动刷新用到了mq|

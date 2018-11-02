@@ -28,6 +28,7 @@
         <module>view-hystrix-dashboard</module>
         <module>view-hystrix-turbine</module>
         <module>view-sleuth-elk</module>
+        <module>view-elasticsearch</module>
     </modules>
 
 

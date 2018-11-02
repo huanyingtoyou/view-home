@@ -1,0 +1,90 @@
+.page-container {
+    color: rgb(0, 0, 204);
+    font-size: 14px;
+    background-color: white;
+}
+
+.page-container ul {
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    /*justify-content: center;*/
+}
+
+.page-container ul, .page-container li {
+    list-style: none;
+}
+
+.page-item {
+    margin-right: 9px;
+}
+
+.page-icon-content {
+    width: 36px;
+    height: 30px;
+}
+
+.page-icon {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    overflow: hidden;
+    border-style:none;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png) no-repeat  -144px -288px;
+}
+
+.page-icon-type1 {
+    position: relative;
+    top: -2px;
+}
+
+.page-icon-type2 {
+    position: relative;
+    top: 3px;
+}
+
+.page-icon-current {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png) no-repeat -96px -288px;
+}
+
+.page-text {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #e1e2e3;
+    cursor: pointer;
+    display: block;
+    line-height: 34px;
+}
+
+.page-text-current {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: block;
+    line-height: 36px;
+}
+
+.page-text:hover,.page-action-text:hover {
+    border: 1px solid rgb(0, 0, 204);
+}
+
+.page-action-text {
+    height: 34px;
+    padding: 0 18px;
+    border: 1px solid #e1e2e3;
+    cursor: pointer;
+    display: block;
+    line-height: 34px;
+    margin-top: 30px;
+    background-color: white;
+
+}

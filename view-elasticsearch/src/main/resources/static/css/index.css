@@ -1,0 +1,46 @@
+body{
+    margin: 0 auto;
+}
+
+.box{
+    /*border: 1px solid #999999;*/
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+.box h1{
+    text-align: center;
+    /*color: #008040;*/
+    color: #3385ff;
+    margin: 50px auto;
+}
+
+.searchbox{
+    height: 30px;
+    /*border: 1px solid #008040;*/
+    border: 1px solid #ccc;
+    width: 80%;
+    margin:50px auto ;
+
+}
+
+.searchbox input[type="text"]{
+    height: 28px;
+    width: 85%;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    padding: 0px 1px 0px 5px;
+}
+
+.searchbox input[type="submit"]{
+    height: 30px;
+    width:13% ;
+    float: right;
+    border: 0;
+    outline: none;
+    /*background-color: #008040;*/
+    background-color: #3385ff;
+    color: #ffffff;
+}

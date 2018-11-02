@@ -1,0 +1,14 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: view-elasticsearch
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://lihy:123456@localhost:8888/
+      name: view-elasticsearch, datasource
+
+  #thymeleaf:
+    #prefix: classpath:/templates/
