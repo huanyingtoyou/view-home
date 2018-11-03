@@ -30,14 +30,8 @@ import java.util.concurrent.ConcurrentHashMap;
  * @date 2018/10/26
  */
 @Configuration
-//@MapperScan(basePackages = "com.lihy.view.sharding.mapper", sqlSessionTemplateRef = "sqlSessionTemplate")
 public class ShardingDataSourceConfig {
-    /*@Bean
-    public DataSource getDataSource() throws SQLException {
-        return getShardingDataSource();
-    }*/
     //@Primary
-    //@Bean(name = "shardingDataSource")
     @Bean
     public DataSource getDataSource() throws SQLException {
         // 配置真实数据源
@@ -55,7 +49,6 @@ public class ShardingDataSourceConfig {
         shardingRuleConfig.getTableRuleConfigs().add(getOrderTableRuleConfiguration());
         shardingRuleConfig.getTableRuleConfigs().add(getOrderItemTableRuleConfiguration());
         shardingRuleConfig.getBindingTableGroups().add("t_order, t_order_item");
-        //shardingRuleConfig.setDefaultDatabaseShardingStrategyConfig(new InlineShardingStrategyConfiguration("user_id", "ds_${user_id % 2}"));
         shardingRuleConfig.setDefaultDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", new DatabaseShardingAlgorithm()));
         shardingRuleConfig.setDefaultTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("order_id", new TablePreciseShardingAlgorithm(), new TableRangeShardingAlgorithm()));
         //增加读写分离规则
@@ -102,29 +95,22 @@ public class ShardingDataSourceConfig {
     private static TableRuleConfiguration getOrderItemTableRuleConfiguration() {
         TableRuleConfiguration orderItemTableRuleConfig = new TableRuleConfiguration();
         orderItemTableRuleConfig.setLogicTable("t_order_item");
-        //orderItemTableRuleConfig.setActualDataNodes("ds_${0..1}.t_order_item_${[0, 1]}");
         orderItemTableRuleConfig.setActualDataNodes("ds_${0..1}.t_order_item_${0..1}");
         return orderItemTableRuleConfig;
     }
 
     List<MasterSlaveRuleConfiguration> getMasterSlaveRuleConfigurations() {
-        MasterSlaveRuleConfiguration masterSlaveRuleConfig1 = new MasterSlaveRuleConfiguration("ds_0", "demo_ds_master_0", Arrays.asList("demo_ds_master_0_slave_0", "demo_ds_master_0_slave_1"));
-        MasterSlaveRuleConfiguration masterSlaveRuleConfig2 = new MasterSlaveRuleConfiguration("ds_1", "demo_ds_master_1", Arrays.asList("demo_ds_master_1_slave_0", "demo_ds_master_1_slave_1"));
+        MasterSlaveRuleConfiguration masterSlaveRuleConfig1 = new MasterSlaveRuleConfiguration("ds_0", "demo_ds_master_0", Arrays.asList("demo_ds_master_0_slave_0"));
+        MasterSlaveRuleConfiguration masterSlaveRuleConfig2 = new MasterSlaveRuleConfiguration("ds_1", "demo_ds_master_1", Arrays.asList("demo_ds_master_1_slave_0"));
         return Lists.newArrayList(masterSlaveRuleConfig1, masterSlaveRuleConfig2);
     }
 
     private static Map<String, DataSource> createDataSourceMap() {
-        /*Map<String, DataSource> result = new HashMap<>();
-        result.put("ds_0", buildDataSourceConfig("ds_0"));
-        result.put("ds_1", buildDataSourceConfig("ds_1"));
-        return result;*/
         final Map<String, DataSource> result = new HashMap<>();
-        result.put("demo_ds_master_0", buildDataSourceConfig("demo_ds_master_0"));
-        result.put("demo_ds_master_0_slave_0", buildDataSourceConfig("demo_ds_master_0_slave_0"));
-        result.put("demo_ds_master_0_slave_1", buildDataSourceConfig("demo_ds_master_0_slave_1"));
-        result.put("demo_ds_master_1", buildDataSourceConfig("demo_ds_master_1"));
-        result.put("demo_ds_master_1_slave_0", buildDataSourceConfig("demo_ds_master_1_slave_0"));
-        result.put("demo_ds_master_1_slave_1", buildDataSourceConfig("demo_ds_master_1_slave_1"));
+        result.put("demo_ds_master_0", buildDataSourceConfig("demo_ds_master_0", "root", "123456"));
+        result.put("demo_ds_master_0_slave_0", buildDataSourceConfig("demo_ds_master_0_slave_0", "root", "jtwmyDTSGX#520"));
+        result.put("demo_ds_master_1", buildDataSourceConfig("demo_ds_master_1", "root", "123456"));
+        result.put("demo_ds_master_1_slave_0", buildDataSourceConfig("demo_ds_master_1_slave_0", "root", "jtwmyDTSGX#520"));
         return result;
     }
 
@@ -133,14 +119,13 @@ public class ShardingDataSourceConfig {
      * @param dataSourceName
      * @return
      */
-    private static DataSource buildDataSourceConfig(final String dataSourceName) {
+    private static DataSource buildDataSourceConfig(final String dataSourceName, final String username, final String password) {
         //使用druid连接数据库
         DruidDataSource druidDataSource = new DruidDataSource();
-        //result.setDriverClassName(Driver.class.getName());
         druidDataSource.setDriverClassName("com.mysql.jdbc.Driver");
         druidDataSource.setUrl(String.format("jdbc:mysql://localhost:3306/%s?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true", dataSourceName));
-        druidDataSource.setUsername("root");
-        druidDataSource.setPassword("");
+        druidDataSource.setUsername(username);
+        druidDataSource.setPassword(password);
         return druidDataSource;
     }
 }
