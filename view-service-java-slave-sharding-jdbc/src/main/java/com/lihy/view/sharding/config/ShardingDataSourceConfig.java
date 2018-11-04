@@ -100,17 +100,17 @@ public class ShardingDataSourceConfig {
     }
 
     List<MasterSlaveRuleConfiguration> getMasterSlaveRuleConfigurations() {
-        MasterSlaveRuleConfiguration masterSlaveRuleConfig1 = new MasterSlaveRuleConfiguration("ds_0", "demo_ds_master_0", Arrays.asList("demo_ds_master_0_slave_0"));
-        MasterSlaveRuleConfiguration masterSlaveRuleConfig2 = new MasterSlaveRuleConfiguration("ds_1", "demo_ds_master_1", Arrays.asList("demo_ds_master_1_slave_0"));
+        MasterSlaveRuleConfiguration masterSlaveRuleConfig1 = new MasterSlaveRuleConfiguration("ds_0", "demo_ds_master_0", Arrays.asList("demo_ds_master_0"));
+        MasterSlaveRuleConfiguration masterSlaveRuleConfig2 = new MasterSlaveRuleConfiguration("ds_1", "demo_ds_master_1", Arrays.asList("demo_ds_master_1"));
         return Lists.newArrayList(masterSlaveRuleConfig1, masterSlaveRuleConfig2);
     }
 
     private static Map<String, DataSource> createDataSourceMap() {
         final Map<String, DataSource> result = new HashMap<>();
-        result.put("demo_ds_master_0", buildDataSourceConfig("demo_ds_master_0", "root", "123456"));
-        result.put("demo_ds_master_0_slave_0", buildDataSourceConfig("demo_ds_master_0_slave_0", "root", "jtwmyDTSGX#520"));
-        result.put("demo_ds_master_1", buildDataSourceConfig("demo_ds_master_1", "root", "123456"));
-        result.put("demo_ds_master_1_slave_0", buildDataSourceConfig("demo_ds_master_1_slave_0", "root", "jtwmyDTSGX#520"));
+        result.put("demo_ds_master_0", buildDataSourceConfig("localhost", "demo_ds_master_0", "root", "123456"));
+        result.put("demo_ds_master_0_slave_0", buildDataSourceConfig("192.168.137.131", "demo_ds_master_0", "root", "jtwmyDTSGX#520"));
+        result.put("demo_ds_master_1", buildDataSourceConfig("localhost", "demo_ds_master_1", "root", "123456"));
+        result.put("demo_ds_master_1_slave_0", buildDataSourceConfig("192.168.137.131", "demo_ds_master_1", "root", "jtwmyDTSGX#520"));
         return result;
     }
 
@@ -119,11 +119,11 @@ public class ShardingDataSourceConfig {
      * @param dataSourceName
      * @return
      */
-    private static DataSource buildDataSourceConfig(final String dataSourceName, final String username, final String password) {
+    private static DataSource buildDataSourceConfig(final String ip, final String dataSourceName, final String username, final String password) {
         //使用druid连接数据库
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        druidDataSource.setUrl(String.format("jdbc:mysql://localhost:3306/%s?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true", dataSourceName));
+        druidDataSource.setUrl(String.format("jdbc:mysql://%s:3306/%s?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true", ip , dataSourceName));
         druidDataSource.setUsername(username);
         druidDataSource.setPassword(password);
         return druidDataSource;
