@@ -5,13 +5,11 @@ import com.google.common.collect.Lists;
 import io.shardingsphere.api.config.MasterSlaveRuleConfiguration;
 import io.shardingsphere.api.config.ShardingRuleConfiguration;
 import io.shardingsphere.api.config.TableRuleConfiguration;
-import io.shardingsphere.api.config.strategy.InlineShardingStrategyConfiguration;
 import io.shardingsphere.api.config.strategy.StandardShardingStrategyConfiguration;
 import io.shardingsphere.shardingjdbc.api.ShardingDataSourceFactory;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -19,7 +17,6 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
-import java.sql.Driver;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -34,16 +31,6 @@ public class ShardingDataSourceConfig {
     //@Primary
     @Bean
     public DataSource getDataSource() throws SQLException {
-        // 配置真实数据源
-        //Map<String, DataSource> dataSourceMap = new HashMap<>(2);
-
-        //dataSourceMap.put("ds_0", buildDataSourceConfig("ds_0"));
-        //dataSourceMap.put("ds_1", buildDataSourceConfig("ds_1"));
-
-        //设置默认db为ds_0，也就是为那些没有配置分库分表策略的指定的默认库
-        //如果只有一个库，也就是不需要分库的话，map里只放一个映射就行了，只有一个库时不需要指定默认库，但2个及以上时必须指定默认库，否则那些没有配置策略的表将无法操作数据
-        //DataSourceRule dataSourceRule = new DataSourceRule(dataSourceMap, "ds_0");
-
         // 配置分片规则
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
         shardingRuleConfig.getTableRuleConfigs().add(getOrderTableRuleConfiguration());
@@ -54,9 +41,6 @@ public class ShardingDataSourceConfig {
         //增加读写分离规则
         shardingRuleConfig.setMasterSlaveRuleConfigs(getMasterSlaveRuleConfigurations());
         return ShardingDataSourceFactory.createDataSource(createDataSourceMap(), shardingRuleConfig, new ConcurrentHashMap(), new Properties());
-        // 获取数据源对象
-        //DataSource dataSource = ShardingDataSourceFactory.createDataSource(dataSourceMap, shardingRuleConfig, new ConcurrentHashMap(), new Properties());
-        //return  dataSource;
     }
 
     /**
@@ -99,12 +83,20 @@ public class ShardingDataSourceConfig {
         return orderItemTableRuleConfig;
     }
 
+    /**
+     * 主从数据源规则配置
+     * @return
+     */
     List<MasterSlaveRuleConfiguration> getMasterSlaveRuleConfigurations() {
-        MasterSlaveRuleConfiguration masterSlaveRuleConfig1 = new MasterSlaveRuleConfiguration("ds_0", "demo_ds_master_0", Arrays.asList("demo_ds_master_0"));
-        MasterSlaveRuleConfiguration masterSlaveRuleConfig2 = new MasterSlaveRuleConfiguration("ds_1", "demo_ds_master_1", Arrays.asList("demo_ds_master_1"));
+        MasterSlaveRuleConfiguration masterSlaveRuleConfig1 = new MasterSlaveRuleConfiguration("ds_0", "demo_ds_master_0", Arrays.asList("demo_ds_master_0_slave_0"));
+        MasterSlaveRuleConfiguration masterSlaveRuleConfig2 = new MasterSlaveRuleConfiguration("ds_1", "demo_ds_master_1", Arrays.asList("demo_ds_master_1_slave_0"));
         return Lists.newArrayList(masterSlaveRuleConfig1, masterSlaveRuleConfig2);
     }
 
+    /**
+     * 封装数据源map
+     * @return
+     */
     private static Map<String, DataSource> createDataSourceMap() {
         final Map<String, DataSource> result = new HashMap<>();
         result.put("demo_ds_master_0", buildDataSourceConfig("localhost", "demo_ds_master_0", "root", "123456"));
@@ -116,14 +108,17 @@ public class ShardingDataSourceConfig {
 
     /**
      * 数据源配置
-     * @param dataSourceName
+     * @param ip
+     * @param databaseName
+     * @param username
+     * @param password
      * @return
      */
-    private static DataSource buildDataSourceConfig(final String ip, final String dataSourceName, final String username, final String password) {
+    private static DataSource buildDataSourceConfig(final String ip, final String databaseName, final String username, final String password) {
         //使用druid连接数据库
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        druidDataSource.setUrl(String.format("jdbc:mysql://%s:3306/%s?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true", ip , dataSourceName));
+        druidDataSource.setUrl(String.format("jdbc:mysql://%s:3306/%s?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false", ip , databaseName));
         druidDataSource.setUsername(username);
         druidDataSource.setPassword(password);
         return druidDataSource;

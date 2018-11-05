@@ -22,6 +22,7 @@
 |view-service-cloud-sharding-jdbc|8084|SpringCloud下sharding-jdbc分库分表|yml配置|
 |view-service-java-sharding-jdbc|8085|java版sharding-jdbc分库分表|暂无|
 |view-service-java-yml-sharding-jdbc|8086|java获取yml配置文件sharding-jdbc分库分表|未完成|
+|view-service-java-slave-sharding-jdbc|8087|java版sharding-jdbc分库分表+读写分离|测试前首先配置好mysql的binlog主从复制|
 |view-view|8080|web|网站入口|
 
 ### 使用说明
