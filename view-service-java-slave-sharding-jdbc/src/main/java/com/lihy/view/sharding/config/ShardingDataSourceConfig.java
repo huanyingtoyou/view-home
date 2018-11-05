@@ -99,9 +99,9 @@ public class ShardingDataSourceConfig {
      */
     private static Map<String, DataSource> createDataSourceMap() {
         final Map<String, DataSource> result = new HashMap<>();
-        result.put("demo_ds_master_0", buildDataSourceConfig("localhost", "demo_ds_master_0", "root", "123456"));
+        result.put("demo_ds_master_0", buildDataSourceConfig("localhost", "demo_ds_master_0", "root", ""));
         result.put("demo_ds_master_0_slave_0", buildDataSourceConfig("192.168.137.131", "demo_ds_master_0", "root", "jtwmyDTSGX#520"));
-        result.put("demo_ds_master_1", buildDataSourceConfig("localhost", "demo_ds_master_1", "root", "123456"));
+        result.put("demo_ds_master_1", buildDataSourceConfig("localhost", "demo_ds_master_1", "root", ""));
         result.put("demo_ds_master_1_slave_0", buildDataSourceConfig("192.168.137.131", "demo_ds_master_1", "root", "jtwmyDTSGX#520"));
         return result;
     }
