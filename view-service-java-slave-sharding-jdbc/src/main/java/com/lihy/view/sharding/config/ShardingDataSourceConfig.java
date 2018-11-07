@@ -29,8 +29,8 @@ import java.util.concurrent.ConcurrentHashMap;
 @Configuration
 public class ShardingDataSourceConfig {
     //@Primary
-    @Bean
-    public DataSource getDataSource() throws SQLException {
+    @Bean(name = "shardingDataSource")
+    public DataSource getShardingDataSource() throws SQLException {
         // 配置分片规则
         ShardingRuleConfiguration shardingRuleConfig = new ShardingRuleConfiguration();
         shardingRuleConfig.getTableRuleConfigs().add(getOrderTableRuleConfiguration());

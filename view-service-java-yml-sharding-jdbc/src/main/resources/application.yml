@@ -2,7 +2,7 @@ spring:
   datasource:
     ds-0:
       hikari:
-        jdbc-url: jdbc:mysql://localhost:3306/ds_0
+        jdbc-url: jdbc:mysql://localhost:3306/ds_0?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password:
@@ -16,7 +16,7 @@ spring:
         data-source-properties: {cachePrepStmts: true, prepStmtCacheSize: 250, prepStmtCacheSqlLimit: 2048, useServerPrepStmts: true}
     ds-1:
       hikari:
-        jdbc-url: jdbc:mysql://localhost:3306/ds_1
+        jdbc-url: jdbc:mysql://localhost:3306/ds_1?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
         driver-class-name: com.mysql.jdbc.Driver
         username: root
         password:
@@ -28,3 +28,4 @@ spring:
         max-lifetime: 600000
         idle-timeout: 120000
         data-source-properties: {cachePrepStmts: true, prepStmtCacheSize: 250, prepStmtCacheSqlLimit: 2048, useServerPrepStmts: true}
+    initialize: false

@@ -26,15 +26,15 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Configuration
 public class ShardingDataSourceConfig {
-    @ConfigurationProperties(prefix = "spring.datasource.ds-0.hikari")
     @Bean(name = "ds_0")
-    public static DataSource dataSource0() {
+    @ConfigurationProperties(prefix = "spring.datasource.ds-0.hikari")
+    public DataSource dataSource0() {
         return new HikariDataSource();
     }
 
-    @ConfigurationProperties(prefix = "spring.datasource.ds-1.hikari")
     @Bean(name = "ds_1")
-    public static DataSource dataSource1() {
+    @ConfigurationProperties(prefix = "spring.datasource.ds-1.hikari")
+    public DataSource dataSource1() {
         return new HikariDataSource();
     }
 
@@ -47,7 +47,7 @@ public class ShardingDataSourceConfig {
         shardingRuleConfig.getBindingTableGroups().add("t_order, t_order_item");
         shardingRuleConfig.setDefaultDatabaseShardingStrategyConfig(new StandardShardingStrategyConfiguration("user_id", new DatabaseShardingAlgorithm()));
         shardingRuleConfig.setDefaultTableShardingStrategyConfig(new StandardShardingStrategyConfiguration("order_id", new TablePreciseShardingAlgorithm(), new TableRangeShardingAlgorithm()));
-        Map<String, DataSource> dataSourceMap = new HashMap<>();
+        Map<String, DataSource> dataSourceMap = new HashMap<>(2);
         dataSourceMap.put("ds_0", ds_0);
         dataSourceMap.put("ds_1", ds_1);
         Properties properties = new Properties();

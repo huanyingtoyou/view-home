@@ -15,7 +15,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 //@SpringBootApplication(scanBasePackages = {"com.lihy.view.sharding"}, exclude = {DataSourceAutoConfiguration.class})
 @SpringBootApplication(scanBasePackages = {"com.lihy.view.sharding"})
 @EnableEurekaClient
-@MapperScan("com.lihy.view.sharding.mapper.**")
+//@MapperScan("com.lihy.view.sharding.mapper.**")
 //为了防止代码的自动配置
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 //@EnableTransactionManagement(proxyTargetClass = true)

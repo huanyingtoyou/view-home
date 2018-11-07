@@ -39,7 +39,7 @@ public class ShardingDataSourceConfig {
     //@Primary
     //@Bean(name = "shardingDataSource")
     @Bean
-    public DataSource getDataSource() throws SQLException {
+    public DataSource shardingDataSource() throws SQLException {
         // 配置真实数据源
         //Map<String, DataSource> dataSourceMap = new HashMap<>(2);
 
