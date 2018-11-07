@@ -1,6 +1,5 @@
 package com.lihy.view.rabbitmq.config;
 
-import lombok.Data;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;
@@ -11,9 +10,14 @@ import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Topic转发模式
+ * 另一种监听写法
+ * @author lihy
+ * @date 2018/11/07
+ */
 @Configuration
-@Data
-public class RabbitMQConfig {
+public class RabbitMqTopicConfigBak {
     final static String queueName = "spring-boot";
 
     @Bean
