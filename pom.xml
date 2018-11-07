@@ -29,6 +29,7 @@
         <module>view-hystrix-turbine</module>
         <module>view-sleuth-elk</module>
         <module>view-elasticsearch</module>
+        <module>view-rabbitmq</module>
     </modules>
 
 
