@@ -30,6 +30,7 @@
         <module>view-sleuth-elk</module>
         <module>view-elasticsearch</module>
         <module>view-rabbitmq</module>
+        <module>view-mycat</module>
     </modules>
 
 

@@ -1,0 +1,11 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: view-mycat
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://lihy:123456@localhost:8888/
+      name: view-mycat

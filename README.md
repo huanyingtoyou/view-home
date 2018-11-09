@@ -24,6 +24,7 @@
 |view-service-java-yml-sharding-jdbc|8086|java获取yml配置文件sharding-jdbc分库分表|暂无|
 |view-service-java-slave-sharding-jdbc|8087|java版sharding-jdbc分库分表+读写分离|测试前首先配置好mysql的binlog主从复制|
 |view-rabbitmq|8090|rabbitmq的基础用法|安装erlang和rabbitmq|
+|view-mycat|8092|mycat的分库测试|其他暂未测试，测试前安装mycat|
 |view-view|8080|web|网站入口|
 
 ### 使用说明
